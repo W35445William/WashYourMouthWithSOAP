@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="052303a4-0fd7-4c64-8bf5-c5b0bf61c02d" activeEnvironment="Default" name="DMODesktop" resourceRoot="${projectDir}" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ef9ffa16-2020-4248-8463-fcba15f1db54" wsaVersion="NONE" name="MeddelelseMultiSendBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseMultiSendBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseMultiSendService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<con:soapui-project id="052303a4-0fd7-4c64-8bf5-c5b0bf61c02d" activeEnvironment="Default" name="DMODesktop" resourceRoot="${projectDir}" soapui-version="5.9.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ef9ffa16-2020-4248-8463-fcba15f1db54" wsaVersion="NONE" name="MeddelelseMultiSendBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseMultiSendBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseMultiSendService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
   <wsp:Policy wsu:Id="SAMLPolicy">
     <wssp:Identity xmlns:wssp="http://www.bea.com/wls90/security/policy">
       <wssp:SupportedTokens>
@@ -6036,8 +6036,8 @@ context.MeddelelseTypeNummer = 'DMO_FFPunktafgift';</script></con:config></con:t
             <ns:Meddelelse>
                <ns:MeddelelseIndhold>
                   <ns:SAPPSBrev_ForeløbigFastsættelse>
-                     <ns:ForeløbigFastsatAngivelseÅr>2014</ns:ForeløbigFastsatAngivelseÅr>
-                     <ns:ForeløbigFastsatAngivelseDato>2014-01-21</ns:ForeløbigFastsatAngivelseDato>
+                     <ns:ForeløbigFastsatAngivelseÅr>2024</ns:ForeløbigFastsatAngivelseÅr>
+                     <ns:ForeløbigFastsatAngivelseDato>2024-01-21</ns:ForeløbigFastsatAngivelseDato>
                      <ns:PunktAfgiftListe>
                         <ns:PunktAfgift>
                            <ns:PligtTekst>PligtTekst_1</ns:PligtTekst>
@@ -6048,10 +6048,10 @@ context.MeddelelseTypeNummer = 'DMO_FFPunktafgift';</script></con:config></con:t
                         </ns:PunktAfgift>
                         <ns:PunktAfgift>
                            <ns:PligtTekst>PligtTekst_2</ns:PligtTekst>
-                           <ns:ForeløbigFastsatAngivelsePeriodeFraDato>2015-01-01</ns:ForeløbigFastsatAngivelsePeriodeFraDato>
-                           <ns:ForeløbigFastsatAngivelsePeriodeTilDato>2015-01-31</ns:ForeløbigFastsatAngivelsePeriodeTilDato>
+                           <ns:ForeløbigFastsatAngivelsePeriodeFraDato>2025-01-01</ns:ForeløbigFastsatAngivelsePeriodeFraDato>
+                           <ns:ForeløbigFastsatAngivelsePeriodeTilDato>2025-01-31</ns:ForeløbigFastsatAngivelsePeriodeTilDato>
                            <ns:ForeløbigFastsatAngivelseBeløb>200000</ns:ForeløbigFastsatAngivelseBeløb>
-                           <ns:ForeløbigFastsatAngivelseKontrolAfgift>800</ns:ForeløbigFastsatAngivelseKontrolAfgift>
+                           <ns:ForeløbigFastsatAngivelseKontrolAfgift>8100</ns:ForeløbigFastsatAngivelseKontrolAfgift>
                         </ns:PunktAfgift>
                         <ns:PunktAfgift>
                            <ns:PligtTekst>PligtTekst_3</ns:PligtTekst>
@@ -6067,7 +6067,7 @@ context.MeddelelseTypeNummer = 'DMO_FFPunktafgift';</script></con:config></con:t
                      <ns:ForeløbigFastsatAngivelseNyregistreretBeløb>2000</ns:ForeløbigFastsatAngivelseNyregistreretBeløb>
                      <ns:ForeløbigFastsatAngivelseKontrolAfgift>1600</ns:ForeløbigFastsatAngivelseKontrolAfgift>
                      <ns:SAPPSOCR>+XX&lt;YYYYYYYYYYYYYYY+ZZZZZZZZ&lt;</ns:SAPPSOCR>
-                     <ns:ForeløbigFastsatAngivelseSidsteRettidigBetalingDato>2013-02-15</ns:ForeløbigFastsatAngivelseSidsteRettidigBetalingDato>
+                     <ns:ForeløbigFastsatAngivelseSidsteRettidigBetalingDato>2015-08-15</ns:ForeløbigFastsatAngivelseSidsteRettidigBetalingDato>
                   </ns:SAPPSBrev_ForeløbigFastsættelse>
                </ns:MeddelelseIndhold>
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>
