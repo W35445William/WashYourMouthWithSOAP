@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="67d91080-bc61-40fb-9051-7b34bbfcc432" activeEnvironment="Default" name="ESFixed" resourceRoot="" soapui-version="5.9.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="0d1f481c-428b-4b15-aac6-0a91014a105f" wsaVersion="NONE" name="MeddelelseMultiSendBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseMultiSendBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseMultiSendService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<con:soapui-project id="966545f1-4f97-4952-983c-1e67fb4194ee" activeEnvironment="Default" name="Rente" soapui-version="5.9.1" resourceRoot="" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="8df401bb-0209-4699-91c4-b191bcbb49d1" wsaVersion="NONE" name="MeddelelseMultiSendBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseMultiSendBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseMultiSendService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
   <wsp:Policy wsu:Id="SAMLPolicy">
     <wssp:Identity xmlns:wssp="http://www.bea.com/wls90/security/policy">
       <wssp:SupportedTokens>
@@ -1353,7 +1353,7 @@
       <xs:element ref="fase2.1:Kontekst"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint></con:endpoints><con:operation id="5cd5bc9e-aecd-4688-accd-facaf92ba12e" isOneWay="false" action="" name="getKompenserTrans" bindingOperationName="getKompenserTrans" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7da71df2-2857-4620-ad4f-9fbcead5e624" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint></con:endpoints><con:operation id="33819e52-c217-4f7f-9b39-dcb01152aa5d" isOneWay="false" action="" name="getKompenserTrans" bindingOperationName="getKompenserTrans" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b6b03b92-7df8-4e8b-9412-b25910cae3b4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ns:KompenserTrans>\r
@@ -1362,72 +1362,190 @@
          </ns:Kontekst>\r
       </ns:KompenserTrans>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getKompenserTransRequest"/></con:call></con:operation><con:operation id="92e464b4-8bbb-4aec-90ef-ec819054793d" isOneWay="false" action="" name="getMeddelelseMultiSend" bindingOperationName="getMeddelelseMultiSend" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="71e7bcdc-3c21-4a0c-a236-1cfce15f2cc5" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <ns:MeddelelseMultiSend_I revision="?">
-         <ns:Kontekst>
-            <!--You may enter ANY elements at this point-->
-         </ns:Kontekst>
-         <ns:FagsystemNavn>?</ns:FagsystemNavn>
-         <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>
-         <ns:Meddelelser>
-            <!--Zero or more repetitions:-->
-            <ns:Meddelelse>
-               <ns:MeddelelseIndhold>
-                  <!--You may enter ANY elements at this point-->
-               </ns:MeddelelseIndhold>
-               <ns:MeddelelseTypeNummer>?</ns:MeddelelseTypeNummer>
-               <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>
-               <ns:KundeNummer>?</ns:KundeNummer>
-               <!--Optional:-->
-               <ns:GensendMeddelelseID>?</ns:GensendMeddelelseID>
-               <!--Optional:-->
-               <ns:KundeType>?</ns:KundeType>
-               <!--Optional:-->
-               <ns:ProduktionEnhedNummer>?</ns:ProduktionEnhedNummer>
-               <!--Optional:-->
-               <ns:MeddelelseOprettetAfMedarbejder>?</ns:MeddelelseOprettetAfMedarbejder>
-               <!--Optional:-->
-               <ns:KanalTypeNummer>?</ns:KanalTypeNummer>
-               <!--Optional:-->
-               <ns:KanalAdresseNavn>
-                  <ns:KundeNavn>?</ns:KundeNavn>
-               </ns:KanalAdresseNavn>
-               <!--Optional:-->
-               <ns:KanalAdresseStruktur>
-                  <ns:AdresseValg>
-                     <!--You have a CHOICE of the next 5 items at this level-->
-                     
-                     
-                     
-                     <ns:EmailAdresseStruktur>
-                        <ns:EmailAdresse>
-                           <!--Optional:-->
-                           <ns:EmailAdresseEmail>?</ns:EmailAdresseEmail>
-                           <!--Optional:-->
-                           <ns:EmailAdresseGyldigFra>?</ns:EmailAdresseGyldigFra>
-                           <!--Optional:-->
-                           <ns:EmailAdresseGyldigTil>?</ns:EmailAdresseGyldigTil>
-                        </ns:EmailAdresse>
-                     </ns:EmailAdresseStruktur>
-                     
-                  </ns:AdresseValg>
-               </ns:KanalAdresseStruktur>
-               <!--Optional:-->
-               <ns:MeddelelseTypeSkalIKommunikationMappe>?</ns:MeddelelseTypeSkalIKommunikationMappe>
-               <ns:Filer>
-                  <!--Zero or more repetitions:-->
-                  <ns:Fil>
-                     <ns:AttachmentContainerType>?</ns:AttachmentContainerType>
-                     <ns:AttachmentContainerIndhold>cid:1410068157887</ns:AttachmentContainerIndhold>
-                  </ns:Fil>
-               </ns:Filer>
-            </ns:Meddelelse>
-         </ns:Meddelelser>
-      </ns:MeddelelseMultiSend_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="c298689c-c920-48fd-99b9-7a08f9660ce1" wsaVersion="NONE" name="MeddelelseStatusMultiHentBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseStatusMultiHentBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseStatusMultiHentService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getKompenserTransRequest"/></con:call></con:operation><con:operation id="746e57a0-9bce-4c48-890c-d121ca0add66" isOneWay="false" action="" name="getMeddelelseMultiSend" bindingOperationName="getMeddelelseMultiSend" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7f1624b7-1ec7-4b9d-9867-279576f023dd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:MeddelelseMultiSend_I revision="?">\r
+         <ns:Kontekst>\r
+            <!--You may enter ANY elements at this point-->\r
+         </ns:Kontekst>\r
+         <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
+         <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
+         <ns:Meddelelser>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:Meddelelse>\r
+               <ns:MeddelelseIndhold>\r
+                  <!--You may enter ANY elements at this point-->\r
+               </ns:MeddelelseIndhold>\r
+               <ns:MeddelelseTypeNummer>?</ns:MeddelelseTypeNummer>\r
+               <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>\r
+               <ns:KundeNummer>?</ns:KundeNummer>\r
+               <!--Optional:-->\r
+               <ns:GensendMeddelelseID>?</ns:GensendMeddelelseID>\r
+               <!--Optional:-->\r
+               <ns:KundeType>?</ns:KundeType>\r
+               <!--Optional:-->\r
+               <ns:ProduktionEnhedNummer>?</ns:ProduktionEnhedNummer>\r
+               <!--Optional:-->\r
+               <ns:MeddelelseOprettetAfMedarbejder>?</ns:MeddelelseOprettetAfMedarbejder>\r
+               <!--Optional:-->\r
+               <ns:KanalTypeNummer>?</ns:KanalTypeNummer>\r
+               <!--Optional:-->\r
+               <ns:KanalAdresseNavn>\r
+                  <ns:KundeNavn>?</ns:KundeNavn>\r
+               </ns:KanalAdresseNavn>\r
+               <!--Optional:-->\r
+               <ns:KanalAdresseStruktur>\r
+                  <ns:AdresseValg>\r
+                     <!--You have a CHOICE of the next 5 items at this level-->\r
+                     <ns:AdresseStruktur>\r
+                        <ns:Adresse>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseFortløbendeNummer>?</ns:AdresseFortløbendeNummer>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseAnvendelseKode>?</ns:AdresseAnvendelseKode>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseVejNavn>?</ns:AdresseVejNavn>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseVejKode>?</ns:AdresseVejKode>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseFraHusNummer>?</ns:AdresseFraHusNummer>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTilHusNummer>?</ns:AdresseTilHusNummer>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseFraHusBogstav>?</ns:AdresseFraHusBogstav>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTilHusBogstav>?</ns:AdresseTilHusBogstav>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseLigeUlige>?</ns:AdresseLigeUlige>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseEtageTekst>?</ns:AdresseEtageTekst>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseSideDørTekst>?</ns:AdresseSideDørTekst>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseCONavn>?</ns:AdresseCONavn>\r
+                           <!--Optional:-->\r
+                           <ns:AdressePostNummer>?</ns:AdressePostNummer>\r
+                           <!--Optional:-->\r
+                           <ns:AdressePostDistrikt>?</ns:AdressePostDistrikt>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseByNavn>?</ns:AdresseByNavn>\r
+                           <!--Optional:-->\r
+                           <ns:AdressePostBox>?</ns:AdressePostBox>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseGyldigFra>?</ns:AdresseGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseGyldigTil>?</ns:AdresseGyldigTil>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeKode>?</ns:AdresseTypeKode>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeTekst>?</ns:AdresseTypeTekst>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeGyldigFra>?</ns:AdresseTypeGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeGyldigTil>?</ns:AdresseTypeGyldigTil>\r
+                           <!--Optional:-->\r
+                           <ns:LandKode>?</ns:LandKode>\r
+                           <!--Optional:-->\r
+                           <ns:LandNavn>?</ns:LandNavn>\r
+                        </ns:Adresse>\r
+                     </ns:AdresseStruktur>\r
+                     <ns:AlternativAdresseStruktur>\r
+                        <ns:AlternativAdresse>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseFortløbendeNummer>?</ns:AlternativAdresseFortløbendeNummer>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAnvendelseKode>?</ns:AlternativAdresseAnvendelseKode>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie1>?</ns:AlternativAdresseAdresseLinie1>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie2>?</ns:AlternativAdresseAdresseLinie2>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie3>?</ns:AlternativAdresseAdresseLinie3>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie4>?</ns:AlternativAdresseAdresseLinie4>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie5>?</ns:AlternativAdresseAdresseLinie5>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie6>?</ns:AlternativAdresseAdresseLinie6>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseAdresseLinie7>?</ns:AlternativAdresseAdresseLinie7>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseGyldigFra>?</ns:AlternativAdresseGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:AlternativAdresseGyldigTil>?</ns:AlternativAdresseGyldigTil>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeKode>?</ns:AdresseTypeKode>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeTekst>?</ns:AdresseTypeTekst>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeGyldigFra>?</ns:AdresseTypeGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:AdresseTypeGyldigTil>?</ns:AdresseTypeGyldigTil>\r
+                           <!--Optional:-->\r
+                           <ns:LandKode>?</ns:LandKode>\r
+                           <!--Optional:-->\r
+                           <ns:LandNavn>?</ns:LandNavn>\r
+                        </ns:AlternativAdresse>\r
+                     </ns:AlternativAdresseStruktur>\r
+                     <ns:TelefonNummerStruktur>\r
+                        <ns:TelefonNummerStruktur>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonNummer>?</ns:TelefonNummer>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonLandeKode>?</ns:TelefonLandeKode>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonGyldigFra>?</ns:TelefonGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonGyldigTil>?</ns:TelefonGyldigTil>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonTypeKode>?</ns:TelefonTypeKode>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonTypeTekst>?</ns:TelefonTypeTekst>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonTypeGyldigFra>?</ns:TelefonTypeGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:TelefonTypeGyldigTil>?</ns:TelefonTypeGyldigTil>\r
+                        </ns:TelefonNummerStruktur>\r
+                     </ns:TelefonNummerStruktur>\r
+                     <ns:EmailAdresseStruktur>\r
+                        <ns:EmailAdresse>\r
+                           <!--Optional:-->\r
+                           <ns:EmailAdresseEmail>?</ns:EmailAdresseEmail>\r
+                           <!--Optional:-->\r
+                           <ns:EmailAdresseGyldigFra>?</ns:EmailAdresseGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:EmailAdresseGyldigTil>?</ns:EmailAdresseGyldigTil>\r
+                        </ns:EmailAdresse>\r
+                     </ns:EmailAdresseStruktur>\r
+                     <ns:FaxNummerStruktur>\r
+                        <ns:FaxNummer>\r
+                           <!--Optional:-->\r
+                           <ns:FaxNummer>?</ns:FaxNummer>\r
+                           <!--Optional:-->\r
+                           <ns:FaxLandeKode>?</ns:FaxLandeKode>\r
+                           <!--Optional:-->\r
+                           <ns:FaxGyldigFra>?</ns:FaxGyldigFra>\r
+                           <!--Optional:-->\r
+                           <ns:FaxGyldigTil>?</ns:FaxGyldigTil>\r
+                        </ns:FaxNummer>\r
+                     </ns:FaxNummerStruktur>\r
+                  </ns:AdresseValg>\r
+               </ns:KanalAdresseStruktur>\r
+               <!--Optional:-->\r
+               <ns:MeddelelseTypeSkalIKommunikationMappe>?</ns:MeddelelseTypeSkalIKommunikationMappe>\r
+               <ns:Filer>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ns:Fil>\r
+                     <ns:AttachmentContainerType>?</ns:AttachmentContainerType>\r
+                     <ns:AttachmentContainerIndhold>cid:1410068157887</ns:AttachmentContainerIndhold>\r
+                  </ns:Fil>\r
+               </ns:Filer>\r
+            </ns:Meddelelse>\r
+         </ns:Meddelelser>\r
+      </ns:MeddelelseMultiSend_I>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="6f229c96-7efb-469c-9acc-b9e1a6c4d9dc" wsaVersion="NONE" name="MeddelelseStatusMultiHentBinding" type="wsdl" bindingName="{http://skat.dk/begrebsmodel/2009/01/15/}MeddelelseStatusMultiHentBinding" soapVersion="1_1" anonymous="optional" definition="http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl"><con:part><con:url>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MeddelelseStatusMultiHentService" targetNamespace="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:fase2.1="http://skat.dk/begrebsmodel/2009/01/15/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
   <wsp:Policy wsu:Id="SAMLPolicy">
     <wssp:Identity xmlns:wssp="http://www.bea.com/wls90/security/policy">
       <wssp:SupportedTokens>
@@ -2898,59 +3016,42 @@
       <xs:element ref="fase2.1:Kontekst"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint></con:endpoints><con:operation id="6ecb7eae-7080-4297-8753-32e4e078cc7f" isOneWay="false" action="" name="getKompenserTrans" bindingOperationName="getKompenserTrans" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ff8b3cbe-0776-420a-85ca-f421c924ac17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ns:KompenserTrans>\r
-         <ns:Kontekst>\r
-            <!--You may enter ANY elements at this point-->\r
-         </ns:Kontekst>\r
-      </ns:KompenserTrans>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getKompenserTransRequest"/></con:call></con:operation><con:operation id="6ef6021a-8ac4-4764-b897-5c699837c9da" isOneWay="false" action="" name="getMeddelelseStatusMultiHent" bindingOperationName="getMeddelelseStatusMultiHent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5e7216d4-4eca-4e15-9ae6-2fb4b0d6da27" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ns:MeddelelseStatusMultiHent_I revision="?">\r
-         <ns:Kontekst>\r
-            <!--You may enter ANY elements at this point-->\r
-         </ns:Kontekst>\r
-         <ns:SøgeValg>\r
-            <!--You have a CHOICE of the next 5 items at this level-->\r
-            <ns:BatchValg>\r
-               <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
-               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
-            </ns:BatchValg>\r
-            <ns:PartielBatchValg>\r
-               <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
-               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
-               <ns:MeddelelseStart>\r
-                  <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>\r
-               </ns:MeddelelseStart>\r
-               <ns:MeddelelseSlut>\r
-                  <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>\r
-               </ns:MeddelelseSlut>\r
-            </ns:PartielBatchValg>\r
-            <ns:ÆndretStatusValg>\r
-               <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
-               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
-               <ns:DatoTidSøgFra>?</ns:DatoTidSøgFra>\r
-               <!--Optional:-->\r
-               <ns:DatoTidSøgTil>?</ns:DatoTidSøgTil>\r
-            </ns:ÆndretStatusValg>\r
-            <ns:EnkeltMeddelelseValg>\r
-               <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
-               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
-               <ns:MeddelelseID>?</ns:MeddelelseID>\r
-            </ns:EnkeltMeddelelseValg>\r
-            <ns:EnkeltFormatteretMeddelelseValg>\r
-               <ns:FagsystemNavn>?</ns:FagsystemNavn>\r
-               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>\r
-               <ns:FormateretMeddelelseID>?</ns:FormateretMeddelelseID>\r
-            </ns:EnkeltFormatteretMeddelelseValg>\r
-         </ns:SøgeValg>\r
-      </ns:MeddelelseStatusMultiHent_I>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getMeddelelseStatusMultiHentRequest"/></con:call></con:operation></con:interface><con:testSuite name="Hent Status" id="69652d39-3fe4-4465-812a-478f5b1bae19"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true" id="073d9ca9-ab81-4aab-9d24-ae6e1ea6341a"><con:settings/><con:testStep type="request" name="getMeddelelseStatusMultiHent - Request 1" id="abde49fa-e6f2-4735-b121-c41330e2585e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="getMeddelelseStatusMultiHent - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed7055e8-f47f-4e8f-a5c5-1081644cb024"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint></con:endpoints><con:operation id="336b20b0-ff49-4f18-8623-719de90cea4f" isOneWay="false" action="" name="getKompenserTrans" bindingOperationName="getKompenserTrans" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="37e270df-6c17-4c80-bca0-b958e9c34dd8" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:KompenserTrans>
+         <ns:Kontekst>
+            <!--You may enter ANY elements at this point-->
+         </ns:Kontekst>
+      </ns:KompenserTrans>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getKompenserTransRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="ccde381e-ab03-4f3d-9b5e-c3ccf27cdbe2" isOneWay="false" action="" name="getMeddelelseStatusMultiHent" bindingOperationName="getMeddelelseStatusMultiHent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="405774ac-7620-4acc-97d1-e7e948216dec" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:MeddelelseStatusMultiHent_I revision="?">
+         <ns:Kontekst>
+            <!--You may enter ANY elements at this point-->
+         </ns:Kontekst>
+         <ns:SøgeValg>
+            <!--You have a CHOICE of the next 5 items at this level-->
+            
+            <ns:PartielBatchValg>
+               <ns:FagsystemNavn>?</ns:FagsystemNavn>
+               <ns:MeddelelseBatchID>?</ns:MeddelelseBatchID>
+               <ns:MeddelelseStart>
+                  <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>
+               </ns:MeddelelseStart>
+               <ns:MeddelelseSlut>
+                  <ns:MeddelelseAfsenderReference>?</ns:MeddelelseAfsenderReference>
+               </ns:MeddelelseSlut>
+            </ns:PartielBatchValg>
+            
+            
+            
+         </ns:SøgeValg>
+      </ns:MeddelelseStatusMultiHent_I>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getMeddelelseStatusMultiHentRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="Hent Status" id="06815868-1c7d-4158-ad8a-abe6df12d2b2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true" id="6abf86cd-2e53-4200-bccd-8f8feeeebfde"><con:settings/><con:testStep type="request" name="getMeddelelseStatusMultiHent - Request 1" id="5fc93238-de3b-4375-8a89-a7704c97502c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="getMeddelelseStatusMultiHent - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed7055e8-f47f-4e8f-a5c5-1081644cb024"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
    <soapenv:Header>
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
@@ -2986,30 +3087,21 @@
          </ns:Kontekst>
          <ns:SøgeValg>
             <ns:BatchValg>
-               <ns:FagsystemNavn>ES</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>1738146524</ns:MeddelelseBatchID>
+               <ns:FagsystemNavn>Test</ns:FagsystemNavn>
+               <ns:MeddelelseBatchID>1725889833</ns:MeddelelseBatchID>
             </ns:BatchValg>
          </ns:SøgeValg>
       </ns:MeddelelseStatusMultiHent_I>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getMeddelelseStatusMultiHentRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="Omregbreve" id="d3e58dc0-286e-486c-8df9-2908a3d7f99d"><con:description>Omreg breve test alle eller 1</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Omregbreve" searchProperties="true" id="323e46bb-87cb-4c37-8122-af33addacf2c" disabled="true"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="e418b7e6-6b41-43dd-bf23-026c50879946"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="c0a46313-fff1-4d7a-908f-ed6dd7eb4745"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="e9c725a5-6ac2-4a40-bab0-dfef32e42614"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-//context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-//context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-//context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="ecae50d8-fabe-4b78-bba6-2d678db28284"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="42aad558-ee65-4cc3-961a-fc3908038262"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="fa520fca-5b2c-4aa9-8457-7b4704e12441"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseStatusMultiHentServicePortType/getMeddelelseStatusMultiHentRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="Erindring_Aar" id="a44bf35a-1d6c-437b-9a61-f664dc1422f7"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Erindring_Aar" searchProperties="true" id="912f535e-5c4b-4125-b8dd-d33c249c20ad"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="d7275c5d-a5b5-43b5-baa0-f0091548f226"><con:settings/><con:config><script>context.FagsystemNavn = 'Test';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="fd5ae51f-cb92-494d-8c22-32a6c5ae3d73"><con:settings/><con:config><script>//context.KundeNummer = '100636657';
+//context.KundeNummer = '0505885058';
+//context.KundeNummer = '0505771206';
+//context.KundeNummer = '0505763858';
+//context.KundeNummer = '19501817';
+context.KundeNummer = '31174759';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="3ef7ad12-bebd-43d7-bff7-ebf3e997b7e0"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'Rykker_Aar';
+//context.MeddelelseTypeNummer = 'Erindring_Kvartal';
+context.MeddelelseTypeNummer = 'Erindring_Aar';
+//context.MeddelelseTypeNummer = 'Rykker_Kvartal';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="ccc57748-36c5-49e3-a6e8-c18685b698e5"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="0004784f-a7fd-4545-b568-f0dfd1d358e8"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w19319';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="1091de10-4410-4fcc-a0e1-160217ac4257"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header>\r
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
@@ -3043,12 +3135,25 @@ context.MeddelelseTypeNummer = 'ES_MomsKvartal';
          <ns:Kontekst>\r
             <ns1:any xmlns:ns1="www.google.dk"/>\r
          </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
+         <ns:FagsystemNavn>EFI</ns:FagsystemNavn>\r
          <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
          <ns:Meddelelser>\r
             <ns:Meddelelse>\r
                <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
+                  <ns:RenteIndberetningErindringRykkerStruktur>\r
+                  
+                     <ns:AngivelseFristKalenderFristDato>1957-08-13</ns:AngivelseFristKalenderFristDato>\r
+                     <ns:RentekategoriNavn>Et_RentekategoriNavn</ns:RentekategoriNavn>\r
+                     <ns:DataUdtrækDato>1977-09-14</ns:DataUdtrækDato>\r
+                     <ns:Indberetningspligtig>\r
+                        <ns:VirksomhedSENummer>12345678</ns:VirksomhedSENummer>\r
+                        <ns:VirksomhedNavnFirmaNavn>Et_VirksomhedNavnFirmaNavn</ns:VirksomhedNavnFirmaNavn>\r
+                     </ns:Indberetningspligtig>\r
+                     <ns:Indkomstperiode>\r
+                        <ns:IndkomstÅr>2018</ns:IndkomstÅr>\r
+                        <ns:RentekategoriKvartalTekst>En_RentekategoriKvartalTekst</ns:RentekategoriKvartalTekst>\r
+                     </ns:Indkomstperiode>\r
+                  </ns:RenteIndberetningErindringRykkerStruktur>\r
                </ns:MeddelelseIndhold>\r
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
@@ -3056,75 +3161,66 @@ context.MeddelelseTypeNummer = 'ES_MomsKvartal';
                <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
                <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
+               <ns:Filer></ns:Filer>\r
             </ns:Meddelelse>\r
          </ns:Meddelelser>\r
       </ns:MeddelelseMultiSend_I>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="67e542cd-f5ed-4439-95d1-1cbfea671041"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="ceadcfa9-7f6e-44d6-a6a1-466bf0df6e72"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ES_AskSidsteBandag" searchProperties="true" id="586751f7-f3a9-4985-a09d-28d132bb3721"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="a519c358-a796-4195-91f6-5e9931bbe4e0"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="8907ea7e-0233-4026-976b-531ef8d02dfe"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="3803fe22-f2e2-4bee-97fe-143a00be4af9"><con:settings/><con:config><script>context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-//context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-//context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-//context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-//context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="6eb10d42-3d92-4b63-9a8a-3515f170bf61"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="a35a2f4e-af96-4412-8405-55969681db26"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="f0f45c2f-7173-4ab3-837d-e218678d82f2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="7baf26f9-01bc-4cfe-92c3-dcf11d5ec3a3"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="ba6c01a4-4771-43d3-9def-56232dfdfe63"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+   <soapenv:Header>\r
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
+         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
+            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>\r
+            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+            </AuthenticationStatement>\r
+            <AttributeStatement>\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r
+                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>\r
+                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>\r
+                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>\r
+               </Attribute>\r
+            </AttributeStatement>\r
+         </Assertion>\r
+      </wsse:Security>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <ns:MeddelelseStatusMultiHent_I>\r
+         <ns:Kontekst>\r
+            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">\r
+               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>\r
+               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>\r
+            </tsk:HovedOplysninger>\r
+         </ns:Kontekst>\r
+         <ns:SøgeValg>\r
+            <!--You have a CHOICE of the next 5 items at this level-->\r
+            <ns:BatchValg>\r
+               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>\r
+               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>\r
+            </ns:BatchValg>\r
+         </ns:SøgeValg>\r
+      </ns:MeddelelseStatusMultiHent_I>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Erindring_Kvartal" searchProperties="true" id="473724c0-9034-4427-8e9d-fd0d90a8de6e"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="df6ef82b-6db8-45e3-a72d-a2855a9da24d"><con:settings/><con:config><script>context.FagsystemNavn = 'Test';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="903227b2-64b7-4d37-90c5-384ae1a89b25"><con:settings/><con:config><script>//context.KundeNummer = '100636657';
+//context.KundeNummer = '0505885058';
+//context.KundeNummer = '0505771206';
+//context.KundeNummer = '0505763858';
+//context.KundeNummer = '19501817';
+context.KundeNummer = '31174759';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="581a453d-416e-45e4-9211-e2df4777bf84"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'Rykker_Aar';
+context.MeddelelseTypeNummer = 'Erindring_Kvartal';
+//context.MeddelelseTypeNummer = 'Erindring_Aar';
+//context.MeddelelseTypeNummer = 'Rykker_Kvartal';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="730a06d3-ee19-417e-80c0-297d0c66c125"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="b0f9d7d5-4087-46c1-9a28-093e088f0f72"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w19319';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="a4cb388d-bca2-4b53-af19-6e3c63ba9b98"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header>\r
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
@@ -3158,12 +3254,25 @@ context.KundeNummer = '31174759';
          <ns:Kontekst>\r
             <ns1:any xmlns:ns1="www.google.dk"/>\r
          </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
+         <ns:FagsystemNavn>EFI</ns:FagsystemNavn>\r
          <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
          <ns:Meddelelser>\r
             <ns:Meddelelse>\r
                <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
+                  <ns:RenteIndberetningErindringRykkerStruktur>\r
+                  
+                     <ns:AngivelseFristKalenderFristDato>1957-08-13</ns:AngivelseFristKalenderFristDato>\r
+                     <ns:RentekategoriNavn>Et_RentekategoriNavn</ns:RentekategoriNavn>\r
+                     <ns:DataUdtrækDato>1977-09-14</ns:DataUdtrækDato>\r
+                     <ns:Indberetningspligtig>\r
+                        <ns:VirksomhedSENummer>12345678</ns:VirksomhedSENummer>\r
+                        <ns:VirksomhedNavnFirmaNavn>Et_VirksomhedNavnFirmaNavn</ns:VirksomhedNavnFirmaNavn>\r
+                     </ns:Indberetningspligtig>\r
+                     <ns:Indkomstperiode>\r
+                        <ns:IndkomstÅr>2018</ns:IndkomstÅr>\r
+                        <ns:RentekategoriKvartalTekst>En_RentekategoriKvartalTekst</ns:RentekategoriKvartalTekst>\r
+                     </ns:Indkomstperiode>\r
+                  </ns:RenteIndberetningErindringRykkerStruktur>\r
                </ns:MeddelelseIndhold>\r
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
@@ -3171,75 +3280,66 @@ context.KundeNummer = '31174759';
                <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
                <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
+               <ns:Filer></ns:Filer>\r
             </ns:Meddelelse>\r
          </ns:Meddelelser>\r
       </ns:MeddelelseMultiSend_I>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="c7cc2a1a-96e8-4fd5-b100-7ac43ef3d0ab"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="eef1236f-53b0-40d1-99db-83ad3122a6ec"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ES_MomsKvartal" searchProperties="true" id="eb36ce30-8565-453f-a033-18648461327d"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="adb38082-f04a-4be5-a52d-cd2ddebbc4e1"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="61b3340d-cf38-498e-b758-4bc0a37664a6"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="0a631013-8ff3-4c08-bdcd-5ef82e0b9535"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-//context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-//context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-//context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="04cdb764-af05-4e37-9741-b72b06f5a6d0"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="91d12b75-6d39-41a9-ae9a-29ef06aa1330"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="78b704c2-1e4f-4c2f-a187-d8c03a0bcc54"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="33e9c09a-1364-4d9e-849d-e950032c0f7c"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="163d86a3-8dd1-4fcd-8979-c8fe9d054dda"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+   <soapenv:Header>\r
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
+         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
+            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>\r
+            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+            </AuthenticationStatement>\r
+            <AttributeStatement>\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r
+                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>\r
+                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>\r
+                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>\r
+               </Attribute>\r
+            </AttributeStatement>\r
+         </Assertion>\r
+      </wsse:Security>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <ns:MeddelelseStatusMultiHent_I>\r
+         <ns:Kontekst>\r
+            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">\r
+               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>\r
+               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>\r
+            </tsk:HovedOplysninger>\r
+         </ns:Kontekst>\r
+         <ns:SøgeValg>\r
+            <!--You have a CHOICE of the next 5 items at this level-->\r
+            <ns:BatchValg>\r
+               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>\r
+               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>\r
+            </ns:BatchValg>\r
+         </ns:SøgeValg>\r
+      </ns:MeddelelseStatusMultiHent_I>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Rykker_Aar" searchProperties="true" id="3f345e52-f938-4817-bc23-53e7fd9d24fd"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="9c49fede-6e17-4077-bcac-980c8388bbd1"><con:settings/><con:config><script>context.FagsystemNavn = 'Test';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="d84dff83-dda3-4d81-a9b4-061e76241960"><con:settings/><con:config><script>//context.KundeNummer = '100636657';
+//context.KundeNummer = '0505885058';
+//context.KundeNummer = '0505771206';
+//context.KundeNummer = '0505763858';
+//context.KundeNummer = '19501817';
+context.KundeNummer = '31174759';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="2fab9936-6744-4832-9a16-daf4bc3108d0"><con:settings/><con:config><script>context.MeddelelseTypeNummer = 'Rykker_Aar';
+//context.MeddelelseTypeNummer = 'Erindring_Kvartal';
+//context.MeddelelseTypeNummer = 'Erindring_Aar';
+//context.MeddelelseTypeNummer = 'Rykker_Kvartal';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="defedb94-2970-43c2-88ea-309aa9f89561"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="1e9833c7-e646-4238-90a8-07502ff0f41e"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w19319';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="21dc5f6a-e89c-4852-9286-3947badd5209"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header>\r
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
@@ -3273,12 +3373,25 @@ context.MeddelelseTypeNummer = 'ES_MomsKvartal';
          <ns:Kontekst>\r
             <ns1:any xmlns:ns1="www.google.dk"/>\r
          </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
+         <ns:FagsystemNavn>EFI</ns:FagsystemNavn>\r
          <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
          <ns:Meddelelser>\r
             <ns:Meddelelse>\r
                <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
+                  <ns:RenteIndberetningErindringRykkerStruktur>\r
+                  
+                     <ns:AngivelseFristKalenderFristDato>1957-08-13</ns:AngivelseFristKalenderFristDato>\r
+                     <ns:RentekategoriNavn>Et_RentekategoriNavn</ns:RentekategoriNavn>\r
+                     <ns:DataUdtrækDato>1977-09-14</ns:DataUdtrækDato>\r
+                     <ns:Indberetningspligtig>\r
+                        <ns:VirksomhedSENummer>12345678</ns:VirksomhedSENummer>\r
+                        <ns:VirksomhedNavnFirmaNavn>Et_VirksomhedNavnFirmaNavn</ns:VirksomhedNavnFirmaNavn>\r
+                     </ns:Indberetningspligtig>\r
+                     <ns:Indkomstperiode>\r
+                        <ns:IndkomstÅr>2018</ns:IndkomstÅr>\r
+                        <ns:RentekategoriKvartalTekst>En_RentekategoriKvartalTekst</ns:RentekategoriKvartalTekst>\r
+                     </ns:Indkomstperiode>\r
+                  </ns:RenteIndberetningErindringRykkerStruktur>\r
                </ns:MeddelelseIndhold>\r
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
@@ -3286,75 +3399,66 @@ context.MeddelelseTypeNummer = 'ES_MomsKvartal';
                <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
                <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
+               <ns:Filer></ns:Filer>\r
             </ns:Meddelelse>\r
          </ns:Meddelelser>\r
       </ns:MeddelelseMultiSend_I>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="bed77e3b-3a0c-45ef-acd6-0102da7eabe2"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="5f4548a4-1ecb-49ae-868c-0d8823703c18"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Es_AskDen10måned" searchProperties="true" id="ad22533e-b09f-488e-b9ac-c8c1513f99a9"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="edbb3a95-c064-4744-974a-a15f40a982f8"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="0d323bd6-e943-4b93-8ca3-ac0c3df4f45f"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="28d9a75c-4938-4b50-840e-437bf20de589"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-//context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-//context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-//context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="abb98d67-1719-437d-b97c-913ee1e5f8de"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="834f188f-4080-4619-9fb1-8ebc4ea47218"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="854878d7-2a1b-4185-a32a-50584a0a8f7d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="cece9126-44df-4b1e-b09b-cd3afd92b517"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="5f10029b-70e9-498b-aeab-21caea3aecc2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+   <soapenv:Header>\r
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
+         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
+            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>\r
+            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+            </AuthenticationStatement>\r
+            <AttributeStatement>\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r
+                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>\r
+                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>\r
+                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>\r
+               </Attribute>\r
+            </AttributeStatement>\r
+         </Assertion>\r
+      </wsse:Security>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <ns:MeddelelseStatusMultiHent_I>\r
+         <ns:Kontekst>\r
+            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">\r
+               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>\r
+               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>\r
+            </tsk:HovedOplysninger>\r
+         </ns:Kontekst>\r
+         <ns:SøgeValg>\r
+            <!--You have a CHOICE of the next 5 items at this level-->\r
+            <ns:BatchValg>\r
+               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>\r
+               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>\r
+            </ns:BatchValg>\r
+         </ns:SøgeValg>\r
+      </ns:MeddelelseStatusMultiHent_I>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Rykker_Kvartal" searchProperties="true" id="3d6e168f-8ebb-4026-af6b-4b6a4ffa9b33"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="6c055a1b-425b-42f6-a82f-2caf41b44ebb"><con:settings/><con:config><script>context.FagsystemNavn = 'Test';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="a775aa87-fc0d-410b-871c-e366c900ca3f"><con:settings/><con:config><script>//context.KundeNummer = '100636657';
+//context.KundeNummer = '0505885058';
+//context.KundeNummer = '0505771206';
+//context.KundeNummer = '0505763858';
+//context.KundeNummer = '19501817';
+context.KundeNummer = '31174759';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="2b63f6c7-77de-446a-9876-1f7ff80fce50"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'Rykker_Aar';
+//context.MeddelelseTypeNummer = 'Erindring_Kvartal';
+//context.MeddelelseTypeNummer = 'Erindring_Aar';
+context.MeddelelseTypeNummer = 'Rykker_Kvartal';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="f7434611-b958-42d3-adab-d6bfa815915b"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="0b862bd1-29d7-4824-882b-d1aecc2f1411"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w19319';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="ed6ecb98-c678-4610-9460-9dc8d42fc721"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header>\r
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
@@ -3388,12 +3492,25 @@ context.MeddelelseTypeNummer = 'Es_AskDen10måned';
          <ns:Kontekst>\r
             <ns1:any xmlns:ns1="www.google.dk"/>\r
          </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
+         <ns:FagsystemNavn>EFI</ns:FagsystemNavn>\r
          <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
          <ns:Meddelelser>\r
             <ns:Meddelelse>\r
                <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
+                  <ns:RenteIndberetningErindringRykkerStruktur>\r
+                  
+                     <ns:AngivelseFristKalenderFristDato>1957-08-13</ns:AngivelseFristKalenderFristDato>\r
+                     <ns:RentekategoriNavn>Et_RentekategoriNavn</ns:RentekategoriNavn>\r
+                     <ns:DataUdtrækDato>1977-09-14</ns:DataUdtrækDato>\r
+                     <ns:Indberetningspligtig>\r
+                        <ns:VirksomhedSENummer>12345678</ns:VirksomhedSENummer>\r
+                        <ns:VirksomhedNavnFirmaNavn>Et_VirksomhedNavnFirmaNavn</ns:VirksomhedNavnFirmaNavn>\r
+                     </ns:Indberetningspligtig>\r
+                     <ns:Indkomstperiode>\r
+                        <ns:IndkomstÅr>2018</ns:IndkomstÅr>\r
+                        <ns:RentekategoriKvartalTekst>En_RentekategoriKvartalTekst</ns:RentekategoriKvartalTekst>\r
+                     </ns:Indkomstperiode>\r
+                  </ns:RenteIndberetningErindringRykkerStruktur>\r
                </ns:MeddelelseIndhold>\r
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
@@ -3401,75 +3518,12 @@ context.MeddelelseTypeNummer = 'Es_AskDen10måned';
                <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
                <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
+               <ns:Filer></ns:Filer>\r
             </ns:Meddelelse>\r
          </ns:Meddelelser>\r
       </ns:MeddelelseMultiSend_I>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="bd896e7f-328c-4bd0-9261-db1d94045e84"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="9728e37f-ad30-4c55-ba58-e8256757fa5d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ES_MomsMåned" searchProperties="true" id="25ffca0f-34da-4a8b-b828-57f9090684e1"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="d6260361-2bbf-4b33-9dcf-d73c420f10c8"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="332fb5b3-8124-4bb2-b718-f91c3f40ba0d"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="20ed9bc2-6c5c-4334-86a3-2a20adb505a9"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-//context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-//context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-//context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="941c5a86-0636-46fc-b9b1-67e3b5cda1c1"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="4046d9a4-8943-45fc-b32f-1382d31df49a"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="66c6bacc-bd43-4aeb-81c7-5eedb431d61e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="948c9d8d-ffc9-4b63-85de-2659cac944a4"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="547bad9c-bb8a-4faa-8b88-a47544dbdfe4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
    <soapenv:Header>\r
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
          <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
@@ -3499,187 +3553,20 @@ context.MeddelelseTypeNummer = 'ES_MomsMåned';
       </wsse:Security>\r
    </soapenv:Header>\r
    <soapenv:Body>\r
-      <ns:MeddelelseMultiSend_I>\r
+      <ns:MeddelelseStatusMultiHent_I>\r
          <ns:Kontekst>\r
-            <ns1:any xmlns:ns1="www.google.dk"/>\r
+            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">\r
+               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>\r
+               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>\r
+            </tsk:HovedOplysninger>\r
          </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
-         <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
-         <ns:Meddelelser>\r
-            <ns:Meddelelse>\r
-               <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
-               </ns:MeddelelseIndhold>\r
-               <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
-               <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
-               <ns:KundeNummer>${KundeNummer#result}</ns:KundeNummer>\r
-               <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
-               <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
-               <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
-            </ns:Meddelelse>\r
-         </ns:Meddelelser>\r
-      </ns:MeddelelseMultiSend_I>\r
+         <ns:SøgeValg>\r
+            <!--You have a CHOICE of the next 5 items at this level-->\r
+            <ns:BatchValg>\r
+               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>\r
+               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>\r
+            </ns:BatchValg>\r
+         </ns:SøgeValg>\r
+      </ns:MeddelelseStatusMultiHent_I>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="c3804ec4-a6fb-4af9-8f15-0e611e782d2c"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="10b0a3a5-c415-4a2c-b197-3023a5f74a6b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ES_MomsHalvår" searchProperties="true" id="2624a5a9-59b0-4899-ae6a-02ca94d48f5e"><con:settings/><con:testStep type="groovy" name="FagsystemNavn" id="ad0440f5-63a1-4565-9e83-f147a2ab7c9c"><con:settings/><con:config><script>context.FagsystemNavn = 'ES';</script></con:config></con:testStep><con:testStep type="groovy" name="KundeNummer" id="90eab742-a295-4c31-b7fe-9e51e64ade30"><con:settings/><con:config><script>//context.KundeNummer = '31605466';
-//context.KundeNummer = '10000005728';
-//context.KundeNummer = 'EU796325086';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '505153037';
-//context.KundeNummer = '28478682';
-//context.KundeNummer = '0102831047'; //alternativ adresse
-//context.KundeNummer = '40288201';
-//context.KundeNummer = '82014152'; //ikke tilmeldt DP
-context.KundeNummer = '31174759';
-//context.KundeNummer = '12345678';
-//context.KundeNummer = '0505624262';</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseTypeNummer" id="0f01233f-10ae-4193-bec5-27f461fcf734"><con:settings/><con:config><script>//context.MeddelelseTypeNummer = 'ES_AskSidsteBandag';
-//context.MeddelelseTypeNummer = 'ES_MomsKvartal';
-context.MeddelelseTypeNummer = 'ES_MomsHalvår';
-//context.MeddelelseTypeNummer = 'Es_AskDen10måned';
-//context.MeddelelseTypeNummer = 'ES_MomsMåned';
-
-</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseBatchId" id="cd364a23-e2ee-4c52-a74d-d3d552e97167"><con:settings/><con:config><script>context.MeddelelseBatchId = String.valueOf( ( System.currentTimeMillis()/1000 ).toInteger() );</script></con:config></con:testStep><con:testStep type="groovy" name="MeddelelseOprettetAfMedarbejder" id="87839d86-21b8-4d6e-8b56-9efd01ce60db"><con:settings/><con:config><script>context.MeddelelseOprettetAfMedarbejder = 'w35445';</script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="17c5fc82-9b5a-4ae0-a4b0-6442ed72fccd"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="e627bb83-4bfd-4f7e-9919-1fe098b681b5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
-   <soapenv:Header>\r
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>\r
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">\r
-               <Subject>\r
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
-                  <SubjectConfirmation>\r
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
-                  </SubjectConfirmation>\r
-               </Subject>\r
-            </AuthenticationStatement>\r
-            <AttributeStatement>\r
-               <Subject>\r
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
-                  <SubjectConfirmation>\r
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
-                  </SubjectConfirmation>\r
-               </Subject>\r
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>\r
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>\r
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>\r
-               </Attribute>\r
-            </AttributeStatement>\r
-         </Assertion>\r
-      </wsse:Security>\r
-   </soapenv:Header>\r
-   <soapenv:Body>\r
-      <ns:MeddelelseMultiSend_I>\r
-         <ns:Kontekst>\r
-            <ns1:any xmlns:ns1="www.google.dk"/>\r
-         </ns:Kontekst>\r
-         <ns:FagsystemNavn>${FagsystemNavn#result}</ns:FagsystemNavn>\r
-         <ns:MeddelelseBatchID>${MeddelelseBatchId#result}</ns:MeddelelseBatchID>\r
-         <ns:Meddelelser>\r
-            <ns:Meddelelse>\r
-               <ns:MeddelelseIndhold>\r
-                  <ns1:any xmlns:ns1="www.google.dk"/>\r
-               </ns:MeddelelseIndhold>\r
-               <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer#result}</ns:MeddelelseTypeNummer>\r
-               <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
-               <ns:KundeNummer>${KundeNummer#result}</ns:KundeNummer>\r
-               <ns:MeddelelseOprettetAfMedarbejder>${MeddelelseOprettetAfMedarbejder#result}</ns:MeddelelseOprettetAfMedarbejder>\r
-               <ns:KanalTypeNummer>4</ns:KanalTypeNummer>\r
-               <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
-               <ns:Filer/>\r
-            </ns:Meddelelse>\r
-         </ns:Meddelelser>\r
-      </ns:MeddelelseMultiSend_I>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="8ad634b8-5513-4f98-b661-b3e8359c68e6"><con:settings/><con:config><delay>2000</delay></con:config></con:testStep><con:testStep type="request" name="HentStatus" id="f4550ea2-496a-4b55-9a50-2a4b6551c473"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="HentStatus" id="bb8dc725-a305-4923-bbe2-8d705c9f02c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.support.editor.views.xml.form2.FormEditorView@ViewType">Data</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-   <soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
-            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
-                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
-                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
-         <ns:SøgeValg>
-            <!--You have a CHOICE of the next 5 items at this level-->
-            <ns:BatchValg>
-               <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-            </ns:BatchValg>
-         </ns:SøgeValg>
-      </ns:MeddelelseStatusMultiHent_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e09afa4-3a47-49f9-8fd7-7ec37efdd189"/><con:assertion type="Schema Compliance" id="1cd27a90-9e1d-418d-8222-39d838d07363"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>658d17e6-a2b1-496e-9b9e-4ec7847010dd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>89e3bd8e-ac50-4567-8686-ab3f5db52d47</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d9eed96b-f244-431b-b0cd-c17ac5fcc735</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8024892f-43d2-4d80-848c-acc36ab4d4dc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>bbb4698d-2864-4315-a63e-16335747555e</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>

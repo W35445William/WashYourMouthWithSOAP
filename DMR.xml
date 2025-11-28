@@ -4648,13 +4648,13 @@
          <ns:Kontekst>
             <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
                <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
+               <tsk:TransaktionsTid>2025-11-17T13:30:47</tsk:TransaktionsTid>
             </tsk:HovedOplysninger>
          </ns:Kontekst>
          <ns:SøgeValg>
             <ns:BatchValg>
                <ns:FagsystemNavn>DMR</ns:FagsystemNavn>
-               <ns:MeddelelseBatchID>1759154484</ns:MeddelelseBatchID>
+               <ns:MeddelelseBatchID>1764152139</ns:MeddelelseBatchID>
             </ns:BatchValg>
          </ns:SøgeValg>
       </ns:MeddelelseStatusMultiHent_I>
@@ -6789,7 +6789,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>\r
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>\r
-               <ns:KanalTypeNummer>4</ns:KanalTypeNummer>
+               <!--<ns:KanalTypeNummer>4</ns:KanalTypeNummer>-->
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
                <ns:Filer/>\r
             </ns:Meddelelse>\r
@@ -19249,7 +19249,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w95641</ns:MeddelelseOprettetAfMedarbejder>
+               <ns:MeddelelseOprettetAfMedarbejder>w35445</ns:MeddelelseOprettetAfMedarbejder>
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
                <ns:Filer/>
             </ns:Meddelelse>
@@ -19304,16 +19304,361 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
          </ns:SøgeValg>
       </ns:MeddelelseStatusMultiHent_I>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9ce26c5f-74fe-4c59-9e49-87d9618a3284"/><con:assertion type="Schema Compliance" id="adcb1e60-ee5e-444a-9667-45f354a41664"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="DMRLOK1039" id="505ff857-c269-4d21-b139-530d4db2af5d"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DMRLOK1039" searchProperties="true" id="3a1ec5f9-9e76-4795-a607-25e4c205d97d"><con:settings/><con:testStep type="groovy" name="Declare constants" id="c2e56a32-bbde-4090-b09b-2c7c43248f0e"><con:settings/><con:config><script>context.FagsystemNavn = 'DMR'; context.KundeNummer = '0505722477'; context.MeddelelseTypeNummer ='DMR1039'; context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toInteger()); </script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="6146961d-7a20-47c9-b3aa-2c9d7d1732e1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="be38b626-9d19-4b61-b660-916540450f58"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9ce26c5f-74fe-4c59-9e49-87d9618a3284"/><con:assertion type="Schema Compliance" id="adcb1e60-ee5e-444a-9667-45f354a41664"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="DMRLOK1039" id="505ff857-c269-4d21-b139-530d4db2af5d"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DMRLOK1039" searchProperties="true" id="3a1ec5f9-9e76-4795-a607-25e4c205d97d"><con:settings/><con:testStep type="groovy" name="Declare constants" id="c2e56a32-bbde-4090-b09b-2c7c43248f0e"><con:settings/><con:config><script>context.FagsystemNavn = 'DMR'; context.KundeNummer = '0505722477'; context.MeddelelseTypeNummer ='DMR1039'; context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toInteger()); </script></con:config></con:testStep><con:testStep type="request" name="Create Meddelelse" id="6146961d-7a20-47c9-b3aa-2c9d7d1732e1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseMultiSendBinding</con:interface><con:operation>getMeddelelseMultiSend</con:operation><con:request name="Create Meddelelse" id="be38b626-9d19-4b61-b660-916540450f58"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseMultiSend/MeddelelseMultiSendService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">\r
+   <soapenv:Header>\r
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">\r
+         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">\r
+            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>\r
+            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+            </AuthenticationStatement>\r
+            <AttributeStatement>\r
+               <Subject>\r
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>\r
+                  <SubjectConfirmation>\r
+                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>\r
+                  </SubjectConfirmation>\r
+               </Subject>\r
+               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\r
+                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>\r
+                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>\r
+                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>\r
+               </Attribute>\r
+            </AttributeStatement>\r
+         </Assertion>\r
+      </wsse:Security>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <ns:MeddelelseMultiSend_I>\r
+         <ns:Kontekst>\r
+            <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">\r
+               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>\r
+               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>\r
+            </tsk:HovedOplysninger>\r
+         </ns:Kontekst>\r
+         <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>\r
+         <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>\r
+         <ns:Meddelelser>\r
+            <ns:Meddelelse>\r
+               <ns:MeddelelseIndhold>\r
+                  <ns:KvitteringIndholdStruktur>\r
+                     <ns:KvitteringDato>2016-04-14T07:58:10.514+02:00</ns:KvitteringDato>\r
+                     <ns:KvitteringValg>\r
+                        <ns:LeasingOpretKvitteringStruktur>\r
+                           <ns:KøretøjVisitkortKvitteringStruktur>\r
+                              <ns:KøretøjIdent>9000000001768832</ns:KøretøjIdent>\r
+                              <ns:KøretøjMærkeTypeNavn>BMW</ns:KøretøjMærkeTypeNavn>\r
+                              <ns:KøretøjTypeTypeNavn>3-V</ns:KøretøjTypeTypeNavn>\r
+                              <ns:KøretøjModelTypeNavn>3-Serie</ns:KøretøjModelTypeNavn>\r
+                              <ns:KøretøjVariantTypeNavn>320d Gran Turismo Steptronic</ns:KøretøjVariantTypeNavn>\r
+                              <ns:KøretøjArtNavn>Personbil</ns:KøretøjArtNavn>\r
+                              <ns:KøretøjOplysningModelÅr>2016</ns:KøretøjOplysningModelÅr>\r
+                              <ns:FarveTypeStruktur>\r
+                                 <ns:FarveTypeNummer>4</ns:FarveTypeNummer>\r
+                                 <ns:FarveTypeNavn>Sort</ns:FarveTypeNavn>\r
+                              </ns:FarveTypeStruktur>\r
+                              <ns:KøretøjAnvendelseNavn>Privat personkørsel</ns:KøretøjAnvendelseNavn>\r
+                              <ns:KøretøjOplysningStelNummer>WBA8Y7104GG398718</ns:KøretøjOplysningStelNummer>\r
+                              <ns:KøretøjOplysningStatus>Oprettet</ns:KøretøjOplysningStatus>\r
+                              <ns:KøretøjOplysningStatusDato>2016-04-21T15:31:56.000+02:00</ns:KøretøjOplysningStatusDato>\r
+                           </ns:KøretøjVisitkortKvitteringStruktur>\r
+                           <ns:LeasingSelskab>\r
+                              <ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                                 <ns:IdentifikatorValg>\r
+                                    <ns:NavnAdresseFirma>\r
+                                       <ns:VirksomhedNavnFirmaNavn>BMW FINANCIAL SERVICES DENMARK A/S</ns:VirksomhedNavnFirmaNavn>\r
+                                       <ns:AdresseValg>\r
+                                          <ns:AdresseStruktur>\r
+                                             <ns:Adresse>\r
+                                                <ns:AdresseFortløbendeNummer>0</ns:AdresseFortløbendeNummer>\r
+                                                <ns:AdresseVejNavn>Borgm Christiansensg</ns:AdresseVejNavn>\r
+                                                <ns:AdresseVejKode>728</ns:AdresseVejKode>\r
+                                                <ns:AdresseFraHusNummer>50</ns:AdresseFraHusNummer>\r
+                                                <ns:AdressePostNummer>2450</ns:AdressePostNummer>\r
+                                                <ns:AdressePostDistrikt>København SV</ns:AdressePostDistrikt>\r
+                                                <ns:AdresseGyldigFra>2005-02-08</ns:AdresseGyldigFra>\r
+                                             </ns:Adresse>\r
+                                          </ns:AdresseStruktur>\r
+                                       </ns:AdresseValg>\r
+                                    </ns:NavnAdresseFirma>\r
+                                 </ns:IdentifikatorValg>\r
+                              </ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                           </ns:LeasingSelskab>\r
+                           <ns:Kunde>\r
+                              <ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                                 <ns:IdentifikatorValg>\r
+                                    <ns:NavnAdressePerson>\r
+                                       <ns:PersonNavnNavn>Rasmus Andreas Dahlin</ns:PersonNavnNavn>\r
+                                       <ns:AdresseValg>\r
+                                          <ns:AdresseStruktur>\r
+                                             <ns:Adresse>\r
+                                                <ns:AdresseVejNavn>Ole Rømers Gade</ns:AdresseVejNavn>\r
+                                                <ns:AdresseVejKode>6165</ns:AdresseVejKode>\r
+                                                <ns:AdresseFraHusNummer>98</ns:AdresseFraHusNummer>\r
+                                                <ns:AdresseEtageTekst>st</ns:AdresseEtageTekst>\r
+                                                <ns:AdressePostNummer>8000</ns:AdressePostNummer>\r
+                                                <ns:AdressePostDistrikt>Aarhus C</ns:AdressePostDistrikt>\r
+                                                <ns:AdresseGyldigFra>2015-12-30</ns:AdresseGyldigFra>\r
+                                             </ns:Adresse>\r
+                                          </ns:AdresseStruktur>\r
+                                       </ns:AdresseValg>\r
+                                    </ns:NavnAdressePerson>\r
+                                 </ns:IdentifikatorValg>\r
+                              </ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                           </ns:Kunde>\r
+                           <ns:LeasingGyldigFra>1967-08-13+00:00</ns:LeasingGyldigFra>\r
+                           <ns:LeasingGyldigTil>1967-08-14+01:00</ns:LeasingGyldigTil>\r
+                           <ns:LeasingMåneder>25</ns:LeasingMåneder>\r
+                           <ns:LeasingNummer>491417273080140834</ns:LeasingNummer>\r
+                           <ns:LeasingKode>1007</ns:LeasingKode>\r
+                           <ns:LeasingBemærkning>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:LeasingBemærkning>\r
+                           <ns:LeasingVærditabStatusTypeNummer>1</ns:LeasingVærditabStatusTypeNummer>\r
+                           <ns:LeasingAfgiftValgStruktur>\r
+                              <ns:LeasingAfgiftValg>\r
+                                 <ns:LeasingAfgift>\r
+                                    <ns:KøretøjRegistreringGrundlagIdent>0</ns:KøretøjRegistreringGrundlagIdent>\r
+                                    <ns:LeasingAfgiftGrundStruktur>\r
+                                       <ns:OpgjortAfgiftFordringId/>\r
+                                       <ns:OpgjortAfgiftDatoTid>2001-12-17T09:30:47Z</ns:OpgjortAfgiftDatoTid>\r
+                                       <ns:OpgjortAfgiftBeløb>12345678912.12</ns:OpgjortAfgiftBeløb>\r
+                                       <ns:OpgjortAfgiftStatus>FejlRettet</ns:OpgjortAfgiftStatus>\r
+                                       <ns:VærdiFastsættelseIdent>0</ns:VærdiFastsættelseIdent>\r
+                                       <ns:LeasingAfgiftDækkerFraDato>1967-08-13</ns:LeasingAfgiftDækkerFraDato>\r
+                                       <ns:LeasingAfgiftDækkerTilDato>1967-08-13</ns:LeasingAfgiftDækkerTilDato>\r
+                                       <ns:OpgjortAfgiftSidsteBetalingDato>1967-08-13</ns:OpgjortAfgiftSidsteBetalingDato>\r
+                                       <ns:RegistreringNummerNummer>0*</ns:RegistreringNummerNummer>\r
+                                       <ns:RegistreringNummerIdent>0</ns:RegistreringNummerIdent>\r
+                                       <ns:KøretøjRegistreringNummer>0</ns:KøretøjRegistreringNummer>\r
+                                       <ns:JuridiskEnhedIdentifikatorStruktur>\r
+                                          <ns:JuridiskEnhedValg>\r
+                                             <ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>\r
+                                          </ns:JuridiskEnhedValg>\r
+                                       </ns:JuridiskEnhedIdentifikatorStruktur>\r
+                                       <ns:MånedAngivelseIdent>0</ns:MånedAngivelseIdent>\r
+                                       <ns:LeasingNummer>0</ns:LeasingNummer>\r
+                                       <ns:LeasingAfgiftOpkrævListe>\r
+                                          <ns:LeasingAfgiftOpkræv>\r
+                                             <ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>\r
+                                             <ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>\r
+                                             <ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>\r
+                                          </ns:LeasingAfgiftOpkræv>\r
+                                          <ns:LeasingAfgiftOpkræv>\r
+                                             <ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>\r
+                                             <ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>\r
+                                             <ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>\r
+                                          </ns:LeasingAfgiftOpkræv>\r
+                                       </ns:LeasingAfgiftOpkrævListe>\r
+                                    </ns:LeasingAfgiftGrundStruktur>\r
+                                 </ns:LeasingAfgift>\r
+                              </ns:LeasingAfgiftValg>\r
+                           </ns:LeasingAfgiftValgStruktur>\r
+                           <ns:KøretøjMotorCO2UdslipBeregnet>17.123456</ns:KøretøjMotorCO2UdslipBeregnet>\r
+                           <ns:KøretøjMotorBatterikapacitet>77.123456</ns:KøretøjMotorBatterikapacitet>\r
+                           <ns:MedKlageVejledning>true</ns:MedKlageVejledning>\r
+                           <ns:FIK>\r
+                              <ns:OCRKortType>07</ns:OCRKortType>\r
+                              <ns:OCRNummer>1234567890123456</ns:OCRNummer>\r
+                              <ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>\r
+                           </ns:FIK>\r
+                           <ns:KøretøjRegistreringPrint>\r
+                              <ns:KøretøjRegistreringStatus>Registreret</ns:KøretøjRegistreringStatus>\r
+                              <ns:KøretøjRegistreringStatusDato>2001-12-17T09:30:47Z</ns:KøretøjRegistreringStatusDato>\r
+                              <ns:KøretøjRegistreringStatusÅrsag>AfmeldtAlmindeligt</ns:KøretøjRegistreringStatusÅrsag>\r
+                              <ns:KøretøjRegistreringGyldigFra>2001-12-17T09:30:47Z</ns:KøretøjRegistreringGyldigFra>\r
+                           </ns:KøretøjRegistreringPrint>\r
+                           <ns:LeasingReelOphørDato>1967-08-13</ns:LeasingReelOphørDato>\r
+                           <ns:KøretøjVærdifastsatAdvisStruktur>\r
+                              <ns:Modtager>\r
+                                 <ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                                    <ns:IdentifikatorValg>\r
+                                       <ns:NavnAdresseFirma>\r
+                                          <ns:VirksomhedNavnFirmaNavn>BMW FINANCIAL SERVICES DENMARK A/S</ns:VirksomhedNavnFirmaNavn>\r
+                                          <ns:AdresseValg>\r
+                                             <ns:AdresseStruktur>\r
+                                                <ns:Adresse>\r
+                                                   <ns:AdresseFortløbendeNummer>0</ns:AdresseFortløbendeNummer>\r
+                                                   <ns:AdresseVejNavn>Borgm Christiansensg</ns:AdresseVejNavn>\r
+                                                   <ns:AdresseVejKode>728</ns:AdresseVejKode>\r
+                                                   <ns:AdresseFraHusNummer>50</ns:AdresseFraHusNummer>\r
+                                                   <ns:AdressePostNummer>2450</ns:AdressePostNummer>\r
+                                                   <ns:AdressePostDistrikt>København SV</ns:AdressePostDistrikt>\r
+                                                   <ns:AdresseGyldigFra>2005-02-08</ns:AdresseGyldigFra>\r
+                                                </ns:Adresse>\r
+                                             </ns:AdresseStruktur>\r
+                                          </ns:AdresseValg>\r
+                                       </ns:NavnAdresseFirma>\r
+                                    </ns:IdentifikatorValg>\r
+                                 </ns:JuridiskEnhedIdentifikatorPrintStruktur>\r
+                              </ns:Modtager>\r
+                              <ns:DMRSagESDHNummer>00-000000</ns:DMRSagESDHNummer>\r
+                              <ns:AnmeldelseÅrsagNavn>Andet</ns:AnmeldelseÅrsagNavn>\r
+                              <ns:KøretøjOplysningStelNummer>WBA8Y7104GG398718</ns:KøretøjOplysningStelNummer>\r
+                              <ns:KøretøjMærkeTypeNavn>BMW</ns:KøretøjMærkeTypeNavn>\r
+                              <ns:KøretøjModelTypeNavn>3-Serie</ns:KøretøjModelTypeNavn>\r
+                              <ns:KøretøjVariantTypeNavn>320d Gran Turismo Steptronic</ns:KøretøjVariantTypeNavn>\r
+                              <ns:KøretøjArtNavn>Personbil</ns:KøretøjArtNavn>\r
+                              <ns:KøretøjAnvendelseNavn>Privat personkørsel</ns:KøretøjAnvendelseNavn>\r
+                              <ns:DrivkraftTypeNavn>Diesel</ns:DrivkraftTypeNavn>\r
+                              <ns:KøretøjMotorKilometerstand>0</ns:KøretøjMotorKilometerstand>\r
+                              <ns:UdstyrTypeListe>\r
+                                 <ns:UdstyrType>\r
+                                    <ns:KøretøjUdstyrTypeNavn>ABS bremser</ns:KøretøjUdstyrTypeNavn>\r
+                                    <ns:KøretøjUdstyrAntal>1</ns:KøretøjUdstyrAntal>\r
+                                 </ns:UdstyrType>\r
+                                 <ns:UdstyrType>\r
+                                    <ns:KøretøjUdstyrTypeNavn>selealarm</ns:KøretøjUdstyrTypeNavn>\r
+                                    <ns:KøretøjUdstyrAntal>3</ns:KøretøjUdstyrAntal>\r
+                                 </ns:UdstyrType>\r
+                                 <ns:UdstyrType>\r
+                                    <ns:KøretøjUdstyrTypeNavn>Airbags</ns:KøretøjUdstyrTypeNavn>\r
+                                    <ns:KøretøjUdstyrAntal>6</ns:KøretøjUdstyrAntal>\r
+                                 </ns:UdstyrType>\r
+                                 <ns:UdstyrType>\r
+                                    <ns:KøretøjUdstyrTypeNavn>ESP (Elektronisk Stabiliserings Program)</ns:KøretøjUdstyrTypeNavn>\r
+                                    <ns:KøretøjUdstyrAntal>1</ns:KøretøjUdstyrAntal>\r
+                                 </ns:UdstyrType>\r
+                                 <ns:UdstyrType>\r
+                                    <ns:KøretøjUdstyrTypeNavn>integreret barnesæde</ns:KøretøjUdstyrTypeNavn>\r
+                                    <ns:KøretøjUdstyrAntal>0</ns:KøretøjUdstyrAntal>\r
+                                 </ns:UdstyrType>\r
+                              </ns:UdstyrTypeListe>\r
+                              <ns:KøretøjOplysningNCAPTest>true</ns:KøretøjOplysningNCAPTest>\r
+                              <ns:KøretøjMotorKmPerLiter>23.3</ns:KøretøjMotorKmPerLiter>\r
+                              <ns:KøretøjMotorPlugInHybrid>true</ns:KøretøjMotorPlugInHybrid>\r
+                              <ns:VærdiFastsættelseAfgiftspligtigVærdi>182028</ns:VærdiFastsættelseAfgiftspligtigVærdi>\r
+                              <ns:VærdiFastsættelseAfgiftspligtigVærdiFørNedsættelse>12345678912.12</ns:VærdiFastsættelseAfgiftspligtigVærdiFørNedsættelse>\r
+                              <ns:VærdiFastsættelseRegistreringAfgift>213982</ns:VærdiFastsættelseRegistreringAfgift>\r
+                              <ns:VærdiFastsættelseHandelspris>278395</ns:VærdiFastsættelseHandelspris>\r
+                              <ns:VærdiFastsættelseNypris>278395</ns:VærdiFastsættelseNypris>\r
+                              <ns:VærdiFastsættelseFradragForBoandel>12345678912.12</ns:VærdiFastsættelseFradragForBoandel>\r
+                              <ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>141620</ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>\r
+                              <ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>12345678912.12</ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>\r
+                              <ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>12345678912.12</ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>\r
+                              <ns:VærdiFastsættelseHandelsprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseHandelsprisFørOmregistrering>\r
+                              <ns:VærdiFastsættelseNyprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseNyprisFørOmregistrering>\r
+                              <ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>\r
+                              <ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>\r
+                              <ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>\r
+                              <ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>\r
+                              <ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>12345678912.12</ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>\r
+                              <ns:VærdiFastsættelseFradragUnderLoft>12345678912.12</ns:VærdiFastsættelseFradragUnderLoft>\r
+                              <ns:VærdiFastsættelseBundfradrag>12345678912.12</ns:VærdiFastsættelseBundfradrag>\r
+                              <ns:TilBetaling>12345678912.12</ns:TilBetaling>\r
+                              <ns:Modregning>12345678912.12</ns:Modregning>\r
+                              <ns:Eksportgodtgørelse>12345678912.12</ns:Eksportgodtgørelse>\r
+                              <ns:VærdiFastsættelseEksportLoft>12345678912.12</ns:VærdiFastsættelseEksportLoft>\r
+                              <ns:VærdiFastsættelseToldSynImport>true</ns:VærdiFastsættelseToldSynImport>\r
+                              <ns:VærdiFastsættelseToldSynEksport>true</ns:VærdiFastsættelseToldSynEksport>\r
+                              <ns:BeregningReguleringTypeVedrørerVærdi>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>Radio fradrag værdi (2016)</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>400</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>AbsBremser fradrag værdi</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>3750</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>Airbags fradrag værdi</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>5120</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>4</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>ESP fradrag værdi</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>2500</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                              </ns:BeregningReguleringTypeVedrørerVærdi>\r
+                              <ns:BeregningReguleringTypeVedrørerAfgift>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>Brændstof fradrag afgift øvrige person 2015</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>21200</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                                 <ns:BeregningRegulering>\r
+                                    <ns:BeregningReguleringNavn>Selealarm fradrag afgift</ns:BeregningReguleringNavn>\r
+                                    <ns:BeregningReguleringBeløb>600</ns:BeregningReguleringBeløb>\r
+                                    <ns:BeregningReguleringAntal>3</ns:BeregningReguleringAntal>\r
+                                 </ns:BeregningRegulering>\r
+                              </ns:BeregningReguleringTypeVedrørerAfgift>\r
+                              <ns:VærdiFastsættelseGrundlagKøretøjFremvist>true</ns:VærdiFastsættelseGrundlagKøretøjFremvist>\r
+                              <ns:VærdiFastsættelseGrundlagStand>false</ns:VærdiFastsættelseGrundlagStand>\r
+                              <ns:VærdiFastsættelseGrundlagKørteKm>false</ns:VærdiFastsættelseGrundlagKørteKm>\r
+                              <ns:VærdiFastsættelseGrundlagEkstraUdstyr>false</ns:VærdiFastsættelseGrundlagEkstraUdstyr>\r
+                              <ns:VærdiFastsættelseGrundlagSærligAnvendelse>false</ns:VærdiFastsættelseGrundlagSærligAnvendelse>\r
+                              <ns:VærdiFastsættelseGrundlagNypris>false</ns:VærdiFastsættelseGrundlagNypris>\r
+                              <ns:VærdiFastsættelseGrundlagNyprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagNyprisBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagHandelspris>true</ns:VærdiFastsættelseGrundlagHandelspris>\r
+                              <ns:VærdiFastsættelseGrundlagHandelsprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagHandelsprisBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagAnnoncePris>false</ns:VærdiFastsættelseGrundlagAnnoncePris>\r
+                              <ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>1587455</ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>2458795</ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagDafKatalog>false</ns:VærdiFastsættelseGrundlagDafKatalog>\r
+                              <ns:VærdiFastsættelseGrundlagDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagDafKatalogBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>false</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>\r
+                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>false</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>\r
+                              <ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeDafKatalog>true</ns:VærdiFastsættelseGrundlagForrigeDafKatalog>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>true</ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>\r
+                              <ns:VærdiFastsættelseGrundlagJournalNummer/>\r
+                              <ns:VærdiFastsættelseGrundlagNoter>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagNoter>\r
+                              <ns:VærdiFastsættelseGrundlagBemærkning>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagBemærkning>\r
+                              <ns:FIK>\r
+                                 <ns:OCRKortType>00</ns:OCRKortType>\r
+                                 <ns:OCRNummer>1234567891234567</ns:OCRNummer>\r
+                                 <ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>\r
+                              </ns:FIK>\r
+                           </ns:KøretøjVærdifastsatAdvisStruktur>\r
+                           <ns:LeasingAfgiftKvittering>\r
+                              <ns:RegistreringAfgift>213982</ns:RegistreringAfgift>\r
+                              <ns:RegistreringAfgiftForudsatVærditab>59915</ns:RegistreringAfgiftForudsatVærditab>\r
+                              <ns:RentesatsAfForudsatVærditab>28</ns:RentesatsAfForudsatVærditab>\r
+                              <ns:RestafgiftVedUdløb>154067</ns:RestafgiftVedUdløb>\r
+                              <ns:RenteAfRestafgift>9629</ns:RenteAfRestafgift>\r
+                              <ns:RentesatsAfRestafgift>6.2</ns:RentesatsAfRestafgift>\r
+                              <ns:FpvVærdiForTillægsrentesats>3.00</ns:FpvVærdiForTillægsrentesats>\r
+                              <ns:ForholdsmæssigRegistreringAfgift>69544</ns:ForholdsmæssigRegistreringAfgift>\r
+                           </ns:LeasingAfgiftKvittering>\r
+                        </ns:LeasingOpretKvitteringStruktur>\r
+                     </ns:KvitteringValg>\r
+                  </ns:KvitteringIndholdStruktur>\r
+               </ns:MeddelelseIndhold>\r
+               <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>\r
+               <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>\r
+               <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>\r
+               <ns:MeddelelseOprettetAfMedarbejder>w19319</ns:MeddelelseOprettetAfMedarbejder>\r
+               <!--<ns:KanalTypeNummer>3</ns:KanalTypeNummer>-->\r
+               <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>\r
+               <ns:Filer/>\r
+            </ns:Meddelelse>\r
+         </ns:Meddelelser>\r
+      </ns:MeddelelseMultiSend_I>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="de8035af-ecdb-4442-b6b9-c88d7f812ff5"><con:settings/><con:config><delay>5000</delay></con:config></con:testStep><con:testStep type="request" name="Hent status" id="67560f6b-9ee4-4d02-9e80-2ada39e7dcb6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="Hent status" id="070896c6-4139-4137-9f30-a25825535cd1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
    <soapenv:Header>
       <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="123" IssueInstant="2011-06-21T10:30:48.776Z" Issuer="ocesca" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2010-06-21T07:30:48.774Z" NotOnOrAfter="2016-06-21T11:30:48.774Z">
-               <DoNotCacheCondition/>
-            </Conditions>
-            <AuthenticationStatement AuthenticationInstant="2011-06-21T10:30:48.776Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
+         <Assertion AssertionID="d913c046fddbca7a55fca34caf18cafa" IssueInstant="2007-05-14T11:45:21.835Z" Issuer="test.unsigned" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
+            <Conditions NotBefore="2007-05-14T11:43:21.834Z" NotOnOrAfter="2112-05-14T11:43:21.834Z"/>
+            <AuthenticationStatement AuthenticationInstant="2007-05-14T11:45:21.834Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
                <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">SkatTester</NameIdentifier>
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
                   <SubjectConfirmation>
                      <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
                   </SubjectConfirmation>
@@ -19321,304 +19666,37 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
             </AuthenticationStatement>
             <AttributeStatement>
                <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">SkatTester</NameIdentifier>
+                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">skatGuid=wEFI04,ou=skatEmployee,ou=internal,ou=entities,dc=skat,dc=dk</NameIdentifier>
                   <SubjectConfirmation>
                      <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
                   </SubjectConfirmation>
                </Subject>
                <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>CN=Tester</AttributeValue>
+                  <AttributeValue>PRIMARY_IDENTITY_skatGuid=14a2d120-bbda-4b62-aa27-1bbd8751f47f,ou=skatSystem,ou=internal,ou=entities,dc=skat,dc=dk</AttributeValue>
+                  <AttributeValue>AUTH_LEVEL_6</AttributeValue>
+                  <AttributeValue>EFISagsbehandlerPRG</AttributeValue>
                </Attribute>
             </AttributeStatement>
          </Assertion>
       </wsse:Security>
    </soapenv:Header>
    <soapenv:Body>
-      <ns:MeddelelseMultiSend_I>
+      <ns:MeddelelseStatusMultiHent_I>
          <ns:Kontekst>
             <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
                <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
                <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
             </tsk:HovedOplysninger>
          </ns:Kontekst>
-         <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
-         <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
-         <ns:Meddelelser>
-            <ns:Meddelelse>
-               <ns:MeddelelseIndhold>
-
-
-               
-			<ns:KvitteringIndholdStruktur>
-				<ns:KvitteringDato>2001-12-17T09:30:47Z</ns:KvitteringDato>
-				<ns:KvitteringValg>
-					<ns:LeasingOpretKvitteringStruktur>
-						<ns:KøretøjVisitkortKvitteringStruktur>
-							<ns:KøretøjIdent>90000000600782</ns:KøretøjIdent>
-							<ns:KøretøjMærkeTypeNavn>BMW</ns:KøretøjMærkeTypeNavn>
-							<ns:KøretøjTypeTypeNavn>187</ns:KøretøjTypeTypeNavn>
-							<ns:KøretøjModelTypeNavn>1 SERIE</ns:KøretøjModelTypeNavn>
-							<ns:KøretøjVariantTypeNavn>166D</ns:KøretøjVariantTypeNavn>
-							<ns:KøretøjArtNavn>Personbil</ns:KøretøjArtNavn>
-							<ns:KøretøjOplysningModelÅr>1700</ns:KøretøjOplysningModelÅr>
-							<ns:FarveTypeStruktur>
-								<ns:FarveTypeNummer>0</ns:FarveTypeNummer>
-								<ns:FarveTypeNavn/>
-							</ns:FarveTypeStruktur>
-							<ns:KøretøjAnvendelseNavn>Privat personkørsel</ns:KøretøjAnvendelseNavn>
-							<ns:KøretøjOplysningStelNummer>W03052LEASING2013</ns:KøretøjOplysningStelNummer>
-							<ns:KøretøjOplysningStatus>Afmeldt</ns:KøretøjOplysningStatus>
-							<ns:KøretøjOplysningStatusDato>2001-12-17T09:30:47Z</ns:KøretøjOplysningStatusDato>
-						</ns:KøretøjVisitkortKvitteringStruktur>
-						<ns:LeasingSelskab>
-							<ns:JuridiskEnhedIdentifikatorPrintStruktur>
-								<ns:IdentifikatorValg>
-									<ns:JuridiskEnhedIdentifikatorStruktur>
-										<ns:JuridiskEnhedValg>
-											<ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-										</ns:JuridiskEnhedValg>
-									</ns:JuridiskEnhedIdentifikatorStruktur>
-								</ns:IdentifikatorValg>
-							</ns:JuridiskEnhedIdentifikatorPrintStruktur>
-						</ns:LeasingSelskab>
-						<ns:Kunde>
-							<ns:JuridiskEnhedIdentifikatorPrintStruktur>
-								<ns:IdentifikatorValg>
-									<ns:JuridiskEnhedIdentifikatorStruktur>
-										<ns:JuridiskEnhedValg>
-											<ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-										</ns:JuridiskEnhedValg>
-									</ns:JuridiskEnhedIdentifikatorStruktur>
-								</ns:IdentifikatorValg>
-							</ns:JuridiskEnhedIdentifikatorPrintStruktur>
-						</ns:Kunde>
-						<ns:LeasingGyldigFra>1967-08-13</ns:LeasingGyldigFra>
-						<ns:LeasingGyldigTil>1967-08-13</ns:LeasingGyldigTil>
-						<ns:LeasingMåneder>0</ns:LeasingMåneder>
-						<ns:LeasingNummer>123456789012345678</ns:LeasingNummer>
-						<ns:LeasingKode>aaaaaaaaaa</ns:LeasingKode>
-						<ns:LeasingBemærkning>En_LeasingBemærkning</ns:LeasingBemærkning>
-						<ns:LeasingAfgiftValgStruktur>
-							<ns:LeasingAfgiftValg>
-								<ns:LeasingAfgift>
-									<ns:KøretøjRegistreringGrundlagIdent>0</ns:KøretøjRegistreringGrundlagIdent>
-									<ns:LeasingAfgiftGrundStruktur>
-										<ns:OpgjortAfgiftFordringId/>
-										<ns:OpgjortAfgiftDatoTid>2001-12-17T09:30:47Z</ns:OpgjortAfgiftDatoTid>
-										<ns:OpgjortAfgiftBeløb>12345678912.12</ns:OpgjortAfgiftBeløb>
-										<ns:OpgjortAfgiftStatus>Fordret</ns:OpgjortAfgiftStatus>
-										<ns:VærdiFastsættelseIdent>0</ns:VærdiFastsættelseIdent>
-										<ns:LeasingAfgiftDækkerFraDato>1967-08-13</ns:LeasingAfgiftDækkerFraDato>
-										<ns:LeasingAfgiftDækkerTilDato>1967-08-13</ns:LeasingAfgiftDækkerTilDato>
-										<ns:OpgjortAfgiftSidsteBetalingDato>1967-08-13</ns:OpgjortAfgiftSidsteBetalingDato>
-										<ns:RegistreringNummerNummer>0*</ns:RegistreringNummerNummer>
-										<ns:RegistreringNummerIdent>0</ns:RegistreringNummerIdent>
-										<ns:KøretøjRegistreringNummer>0</ns:KøretøjRegistreringNummer>
-										<ns:JuridiskEnhedIdentifikatorStruktur>
-											<ns:JuridiskEnhedValg>
-												<ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-											</ns:JuridiskEnhedValg>
-										</ns:JuridiskEnhedIdentifikatorStruktur>
-										<ns:MånedAngivelseIdent>0</ns:MånedAngivelseIdent>
-										<ns:LeasingAfgiftOpkrævListe>
-											<ns:LeasingAfgiftOpkræv>
-												<ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>
-												<ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>
-												<ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>
-											</ns:LeasingAfgiftOpkræv>
-										</ns:LeasingAfgiftOpkrævListe>
-									</ns:LeasingAfgiftGrundStruktur>
-								</ns:LeasingAfgift>
-							</ns:LeasingAfgiftValg>
-						</ns:LeasingAfgiftValgStruktur>
-						<ns:MedKlageVejledning>true</ns:MedKlageVejledning>
-						<ns:FIK>
-							<ns:OCRKortType>07</ns:OCRKortType>
-							<ns:OCRNummer>1234567891234566</ns:OCRNummer>
-							<ns:OCRKontoNummer>1234567891234577</ns:OCRKontoNummer>
-						</ns:FIK>
-						<ns:KøretøjRegistreringPrint>
-							<ns:KøretøjRegistreringStatus>Registreret</ns:KøretøjRegistreringStatus>
-							<ns:KøretøjRegistreringStatusDato>2001-12-17T09:30:47Z</ns:KøretøjRegistreringStatusDato>
-							<ns:KøretøjRegistreringStatusÅrsag>NummerpladerOverførtTilAndetKøretøj</ns:KøretøjRegistreringStatusÅrsag>
-							<ns:KøretøjRegistreringGyldigFra>2001-12-17T09:30:47Z</ns:KøretøjRegistreringGyldigFra>
-						</ns:KøretøjRegistreringPrint>
-						<ns:LeasingReelOphørDato>2014-12-24</ns:LeasingReelOphørDato>
-						<ns:KøretøjVærdifastsatAdvisStruktur>
-							<ns:Modtager>
-								<ns:JuridiskEnhedIdentifikatorPrintStruktur>
-									<ns:IdentifikatorValg>
-										<ns:JuridiskEnhedIdentifikatorStruktur>
-											<ns:JuridiskEnhedValg>
-												<ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-											</ns:JuridiskEnhedValg>
-										</ns:JuridiskEnhedIdentifikatorStruktur>
-									</ns:IdentifikatorValg>
-								</ns:JuridiskEnhedIdentifikatorPrintStruktur>
-							</ns:Modtager>
-							<ns:DMRSagESDHNummer>12-234567</ns:DMRSagESDHNummer>
-							<ns:AnmeldelseÅrsagNavn/>
-							<ns:KøretøjOplysningStelNummer>123456789012345678</ns:KøretøjOplysningStelNummer>
-							<ns:KøretøjMærkeTypeNavn/>
-							<ns:KøretøjModelTypeNavn/>
-							<ns:KøretøjVariantTypeNavn/>
-							<ns:KøretøjArtNavn/>
-							<ns:KøretøjAnvendelseNavn/>
-							<ns:KøretøjOplysningFørsteRegistreringDato>1967-08-13</ns:KøretøjOplysningFørsteRegistreringDato>
-							<ns:DrivkraftTypeNavn/>
-							<ns:KøretøjMotorKilometerstand>0</ns:KøretøjMotorKilometerstand>
-							<ns:KøretøjVærditabProcentsats>123456</ns:KøretøjVærditabProcentsats>
-							<ns:UdstyrTypeListe>
-								<ns:UdstyrType>
-									<ns:KøretøjUdstyrTypeNavn/>
-									<ns:KøretøjUdstyrAntal>0</ns:KøretøjUdstyrAntal>
-								</ns:UdstyrType>
-							</ns:UdstyrTypeListe>
-							<ns:KøretøjOplysningNCAPTest>true</ns:KøretøjOplysningNCAPTest>
-							<ns:KøretøjMotorKmPerLiter>12.1</ns:KøretøjMotorKmPerLiter>
-							<ns:VærdiFastsættelseAfgiftspligtigVærdi>1.11</ns:VærdiFastsættelseAfgiftspligtigVærdi>
-							<ns:VærdiFastsættelseRegistreringAfgift>2.22</ns:VærdiFastsættelseRegistreringAfgift>
-							<ns:VærdiFastsættelseHandelspris>3.33</ns:VærdiFastsættelseHandelspris>
-							<ns:VærdiFastsættelseNypris>4.44</ns:VærdiFastsættelseNypris>
-							<ns:VærdiFastsættelseFradragForBoandel>5.55</ns:VærdiFastsættelseFradragForBoandel>
-							<ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>6.66</ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>
-							<ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>7.77</ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>
-							<ns:VærdiFastsættelseHandelsprisFørOmregistrering>8.88</ns:VærdiFastsættelseHandelsprisFørOmregistrering>
-							<ns:VærdiFastsættelseNyprisFørOmregistrering>9.99</ns:VærdiFastsættelseNyprisFørOmregistrering>
-							<ns:Modregning>10.10</ns:Modregning>
-							<ns:Eksportgodtgørelse>11.11</ns:Eksportgodtgørelse>
-							<ns:VærdiFastsættelseToldSynImport>true</ns:VærdiFastsættelseToldSynImport>
-							<ns:VærdiFastsættelseToldSynEksport>true</ns:VærdiFastsættelseToldSynEksport>
-							<ns:BeregningReguleringTypeVedrørerVærdi>
-								<ns:BeregningRegulering>
-									<ns:BeregningReguleringNavn/>
-									<ns:BeregningReguleringBeløb>1.21</ns:BeregningReguleringBeløb>
-									<ns:BeregningReguleringAntal>2</ns:BeregningReguleringAntal>
-								</ns:BeregningRegulering>
-							</ns:BeregningReguleringTypeVedrørerVærdi>
-							<ns:BeregningReguleringTypeVedrørerAfgift>
-								<ns:BeregningRegulering>
-									<ns:BeregningReguleringNavn/>
-									<ns:BeregningReguleringBeløb>3.21</ns:BeregningReguleringBeløb>
-									<ns:BeregningReguleringAntal>3</ns:BeregningReguleringAntal>
-								</ns:BeregningRegulering>
-							</ns:BeregningReguleringTypeVedrørerAfgift>
-							<ns:VærdiFastsættelseGrundlagKøretøjFremvist>true</ns:VærdiFastsættelseGrundlagKøretøjFremvist>
-							<ns:VærdiFastsættelseGrundlagStand>true</ns:VærdiFastsættelseGrundlagStand>
-							<ns:VærdiFastsættelseGrundlagKørteKm>true</ns:VærdiFastsættelseGrundlagKørteKm>
-							<ns:VærdiFastsættelseGrundlagEkstraUdstyr>true</ns:VærdiFastsættelseGrundlagEkstraUdstyr>
-							<ns:VærdiFastsættelseGrundlagSærligAnvendelse>true</ns:VærdiFastsættelseGrundlagSærligAnvendelse>
-							<ns:VærdiFastsættelseGrundlagNypris>true</ns:VærdiFastsættelseGrundlagNypris>
-							<ns:VærdiFastsættelseGrundlagNyprisBeløb>5.21</ns:VærdiFastsættelseGrundlagNyprisBeløb>
-							<ns:VærdiFastsættelseGrundlagHandelspris>true</ns:VærdiFastsættelseGrundlagHandelspris>
-							<ns:VærdiFastsættelseGrundlagHandelsprisBeløb>6.21</ns:VærdiFastsættelseGrundlagHandelsprisBeløb>
-							<ns:VærdiFastsættelseGrundlagAnnoncePris>true</ns:VærdiFastsættelseGrundlagAnnoncePris>
-							<ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>7.21</ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>
-							<ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>8.21</ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>
-							<ns:VærdiFastsættelseGrundlagDafKatalog>true</ns:VærdiFastsættelseGrundlagDafKatalog>
-							<ns:VærdiFastsættelseGrundlagDafKatalogBeløb>9.21</ns:VærdiFastsættelseGrundlagDafKatalogBeløb>
-							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>
-							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>10.21</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>
-							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>11.21</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>
-							<ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>
-							<ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>12.21</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>
-							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>13.21</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>14.21</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeDafKatalog>true</ns:VærdiFastsættelseGrundlagForrigeDafKatalog>
-							<ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>
-							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>true</ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>
-							<ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>12.12</ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>123.12</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>1234.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>
-							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>12345.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>
-							<ns:VærdiFastsættelseGrundlagJournalNummer/>
-							<ns:VærdiFastsættelseGrundlagNoter>En_Grundlag_Note</ns:VærdiFastsættelseGrundlagNoter>
-							<ns:VærdiFastsættelseGrundlagBemærkning>En_Grundlag_Bemærkning</ns:VærdiFastsættelseGrundlagBemærkning>
-							<ns:FIK>
-								<ns:OCRKortType>17</ns:OCRKortType>
-								<ns:OCRNummer>1234567891234555</ns:OCRNummer>
-								<ns:OCRKontoNummer>1234567891234599</ns:OCRKontoNummer>
-							</ns:FIK>
-						</ns:KøretøjVærdifastsatAdvisStruktur>
-						<ns:LeasingAfgiftKvittering>
-							<ns:RegistreringAfgift>12345678912.12</ns:RegistreringAfgift>
-							<ns:RegistreringAfgiftForudsatVærditab>12.12</ns:RegistreringAfgiftForudsatVærditab>
-							<ns:RentesatsAfForudsatVærditab>123456</ns:RentesatsAfForudsatVærditab>
-							<ns:RestafgiftVedUdløb>12345678912.12</ns:RestafgiftVedUdløb>
-							<ns:RenteAfRestafgift>12345678912.12</ns:RenteAfRestafgift>
-							<ns:RentesatsAfRestafgift>123456</ns:RentesatsAfRestafgift>
-							<ns:FpvVærdiForTillægsrentesats>123456</ns:FpvVærdiForTillægsrentesats>
-							<ns:ForholdsmæssigRegistreringAfgift>12345678912.12</ns:ForholdsmæssigRegistreringAfgift>
-							<ns:TidligereAfregnetRegistreringAfgift>12345678912.12</ns:TidligereAfregnetRegistreringAfgift>
-						</ns:LeasingAfgiftKvittering>
-					</ns:LeasingOpretKvitteringStruktur>
-				</ns:KvitteringValg>
-			</ns:KvitteringIndholdStruktur>
- 
- </ns:MeddelelseIndhold>
-                         
-               
-               
-               <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
-               <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
-               <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w95641</ns:MeddelelseOprettetAfMedarbejder>
-               <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
-               <ns:Filer/>
-            </ns:Meddelelse>
-         </ns:Meddelelser>
-      </ns:MeddelelseMultiSend_I>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://skat.dk/begrebsmodel/2009/01/15/MeddelelseMultiSendServicePortType/getMeddelelseMultiSendRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="de8035af-ecdb-4442-b6b9-c88d7f812ff5"><con:settings/><con:config><delay>5000</delay></con:config></con:testStep><con:testStep type="request" name="Hent status" id="67560f6b-9ee4-4d02-9e80-2ada39e7dcb6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MeddelelseStatusMultiHentBinding</con:interface><con:operation>getMeddelelseStatusMultiHent</con:operation><con:request name="Hent status" id="070896c6-4139-4137-9f30-a25825535cd1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://84.255.109.36:7013/MeddelelseStatusMultiHentProxyService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://skat.dk/begrebsmodel/2009/01/15/">
-<soapenv:Header>
-      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-         <Assertion AssertionID="123" IssueInstant="2011-06-21T10:30:48.776Z" Issuer="ocesca" MajorVersion="1" MinorVersion="1" xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol">
-            <Conditions NotBefore="2010-06-21T07:30:48.774Z" NotOnOrAfter="2016-06-21T11:30:48.774Z">
-               <DoNotCacheCondition/>
-            </Conditions>
-            <AuthenticationStatement AuthenticationInstant="2011-06-21T10:30:48.776Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">SkatTester</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-            </AuthenticationStatement>
-            <AttributeStatement>
-               <Subject>
-                  <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="skat">SkatTester</NameIdentifier>
-                  <SubjectConfirmation>
-                     <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
-                  </SubjectConfirmation>
-               </Subject>
-               <Attribute AttributeName="Groups" AttributeNamespace="urn:bea:security:saml:groups" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <AttributeValue>CN=Tester</AttributeValue>
-               </Attribute>
-            </AttributeStatement>
-         </Assertion>
-      </wsse:Security>
-   </soapenv:Header>
-
-   <soapenv:Body>
-      <ns:MeddelelseStatusMultiHent_I>
-         <ns:Kontekst>
-        <tsk:HovedOplysninger xmlns:tsk="http://skat.dk/begrebsmodel/xml/schemas/kontekst/2007/05/31/">
-               <tsk:TransaktionsID>A12345678ZZ</tsk:TransaktionsID>
-               <tsk:TransaktionsTid>2010-10-14T13:30:47</tsk:TransaktionsTid>
-            </tsk:HovedOplysninger>
-         </ns:Kontekst>
          <ns:SøgeValg>
-   
             <ns:BatchValg>
                <ns:FagsystemNavn>${FagsystemNavn}</ns:FagsystemNavn>
                <ns:MeddelelseBatchID>${MeddelelseBatchId}</ns:MeddelelseBatchID>
             </ns:BatchValg>
-            
          </ns:SøgeValg>
       </ns:MeddelelseStatusMultiHent_I>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4d6a4d6f-c271-4695-a81e-78adf422469b"/><con:assertion type="Schema Compliance" id="fd8778d2-4328-4b56-af1b-de5391c8a7ff"><con:configuration/></con:assertion><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="DMRLOK1040" id="71ac8b92-53ab-4642-8771-ceb446990bc1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DMRLOK1040" searchProperties="true" id="14ecd831-45e9-4e66-9c50-f1fd4b95d963"><con:settings/><con:testStep type="groovy" name="Declare constants" id="ec6be983-f92b-4db1-bfe1-7c2c1e4cb9a3"><con:settings/><con:config><script>context.FagsystemNavn = 'DMR';
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4d6a4d6f-c271-4695-a81e-78adf422469b"/><con:assertion type="Schema Compliance" id="fd8778d2-4328-4b56-af1b-de5391c8a7ff"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="DMRLOK1040" id="71ac8b92-53ab-4642-8771-ceb446990bc1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DMRLOK1040" searchProperties="true" id="14ecd831-45e9-4e66-9c50-f1fd4b95d963"><con:settings/><con:testStep type="groovy" name="Declare constants" id="ec6be983-f92b-4db1-bfe1-7c2c1e4cb9a3"><con:settings/><con:config><script>context.FagsystemNavn = 'DMR';
 context.KundeNummer = '31174759';
 context.MeddelelseTypeNummer ='DMR1040';
 context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toInteger());
@@ -19664,250 +19742,304 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
          <ns:Meddelelser>
             <ns:Meddelelse>
                <ns:MeddelelseIndhold>
-                  <ns:KvitteringIndholdStruktur>
-                     <ns:KvitteringDato>2016-04-04T14:34:00.382+02:00</ns:KvitteringDato>
-                     <ns:KvitteringValg>
-                        <ns:LeasingOpretKvitteringStruktur>
-                           <ns:KøretøjVisitkortKvitteringStruktur>
-                              <ns:KøretøjIdent>1234567890123456</ns:KøretøjIdent>
-                              <ns:KøretøjMærkeTypeNavn>Et_KøretøjMærkeTypeNavn</ns:KøretøjMærkeTypeNavn>
-                              <ns:KøretøjTypeTypeNavn>Et_KøretøjTypeTypeNavn</ns:KøretøjTypeTypeNavn>
-                              <ns:KøretøjModelTypeNavn>Et_KøretøjModelTypeNavn</ns:KøretøjModelTypeNavn>
-                              <ns:KøretøjVariantTypeNavn>Et_KøretøjVariantTypeNavn</ns:KøretøjVariantTypeNavn>
-                              <ns:KøretøjArtNavn>Et_KøretøjArtNavn</ns:KøretøjArtNavn>
-                              <ns:KøretøjOplysningModelÅr>1700</ns:KøretøjOplysningModelÅr>
-                              <ns:FarveTypeStruktur>
-                                 <ns:FarveTypeNummer>0</ns:FarveTypeNummer>
-                                 <ns:FarveTypeNavn/>
-                              </ns:FarveTypeStruktur>
-                              <ns:KøretøjAnvendelseNavn/>
-                              <ns:KøretøjOplysningStelNummer>A123456789B123456789</ns:KøretøjOplysningStelNummer>
-                              <ns:KøretøjOplysningStatus>DelvistOprettet</ns:KøretøjOplysningStatus>
-                              <ns:KøretøjOplysningStatusDato>2001-12-17T09:30:47Z</ns:KøretøjOplysningStatusDato>
-                           </ns:KøretøjVisitkortKvitteringStruktur>
-                           <ns:LeasingSelskab>
-                              <ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                                 <ns:IdentifikatorValg>
-                                    <ns:JuridiskEnhedIdentifikatorStruktur>
-                                       <ns:JuridiskEnhedValg>
-                                          <ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-                                       </ns:JuridiskEnhedValg>
-                                    </ns:JuridiskEnhedIdentifikatorStruktur>
-                                 </ns:IdentifikatorValg>
-                              </ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                           </ns:LeasingSelskab>
-                           <ns:Kunde>
-                              <ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                                 <ns:IdentifikatorValg>
-                                    <ns:JuridiskEnhedIdentifikatorStruktur>
-                                       <ns:JuridiskEnhedValg>
-                                          <ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-                                       </ns:JuridiskEnhedValg>
-                                    </ns:JuridiskEnhedIdentifikatorStruktur>
-                                 </ns:IdentifikatorValg>
-                              </ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                           </ns:Kunde>
-                           <ns:LeasingGyldigFra>1967-08-13</ns:LeasingGyldigFra>
-                           <ns:LeasingGyldigTil>1967-08-13</ns:LeasingGyldigTil>
-                           <ns:LeasingMåneder>2</ns:LeasingMåneder>
-                           <ns:LeasingNummer>123456789012345678</ns:LeasingNummer>
-                           <ns:LeasingKode>aaaaaaaaaa</ns:LeasingKode>
-                           <ns:LeasingBemærkning>En_LeasingBemærkning</ns:LeasingBemærkning>
-                           <ns:LeasingAfgiftValgStruktur>
-                              <ns:LeasingAfgiftValg>
-                                 <ns:LeasingAfgift>
-                                    <ns:KøretøjRegistreringGrundlagIdent>0</ns:KøretøjRegistreringGrundlagIdent>
-                                    <ns:LeasingAfgiftGrundStruktur>
-                                       <ns:OpgjortAfgiftFordringId/>
-                                       <ns:OpgjortAfgiftDatoTid>2001-12-17T09:30:47Z</ns:OpgjortAfgiftDatoTid>
-                                       <ns:OpgjortAfgiftBeløb>12345678912.12</ns:OpgjortAfgiftBeløb>
-                                       <ns:OpgjortAfgiftStatus>LagtIDMOKø</ns:OpgjortAfgiftStatus>
-                                       <ns:VærdiFastsættelseIdent>0</ns:VærdiFastsættelseIdent>
-                                       <ns:LeasingAfgiftDækkerFraDato>1967-08-13</ns:LeasingAfgiftDækkerFraDato>
-                                       <ns:LeasingAfgiftDækkerTilDato>1967-08-13</ns:LeasingAfgiftDækkerTilDato>
-                                       <ns:OpgjortAfgiftSidsteBetalingDato>1967-08-13</ns:OpgjortAfgiftSidsteBetalingDato>
-                                       <ns:RegistreringNummerNummer>1234567890</ns:RegistreringNummerNummer>
-                                       <ns:RegistreringNummerIdent>1234567890</ns:RegistreringNummerIdent>
-                                       <ns:KøretøjRegistreringNummer>1234567890</ns:KøretøjRegistreringNummer>
-                                       <ns:JuridiskEnhedIdentifikatorStruktur>
-                                          <ns:JuridiskEnhedValg>
-                                             <ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-                                          </ns:JuridiskEnhedValg>
-                                       </ns:JuridiskEnhedIdentifikatorStruktur>
-                                       <ns:MånedAngivelseIdent>0</ns:MånedAngivelseIdent>
-                                       <ns:LeasingNummer>0</ns:LeasingNummer>
-                                       <ns:LeasingAfgiftOpkrævListe>
-                                          <ns:LeasingAfgiftOpkræv>
-                                             <ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>
-                                             <ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>
-                                             <ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>
-                                          </ns:LeasingAfgiftOpkræv>
-                                          <ns:LeasingAfgiftOpkræv>
-                                             <ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>
-                                             <ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>
-                                             <ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>
-                                          </ns:LeasingAfgiftOpkræv>
-                                       </ns:LeasingAfgiftOpkrævListe>
-                                    </ns:LeasingAfgiftGrundStruktur>
-                                 </ns:LeasingAfgift>
-                              </ns:LeasingAfgiftValg>
-                           </ns:LeasingAfgiftValgStruktur>
-                           <ns:MedKlageVejledning>true</ns:MedKlageVejledning>
-                           <ns:FIK>
-                              <ns:OCRKortType>00</ns:OCRKortType>
-                              <ns:OCRNummer>1234567891234567</ns:OCRNummer>
-                              <ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>
-                           </ns:FIK>
-                           <ns:KøretøjRegistreringPrint>
-                              <ns:KøretøjRegistreringStatus>Registreret</ns:KøretøjRegistreringStatus>
-                              <ns:KøretøjRegistreringStatusDato>2001-12-17T09:30:47Z</ns:KøretøjRegistreringStatusDato>
-                              <ns:KøretøjRegistreringStatusÅrsag>NummerpladerOverførtTilAndetKøretøj</ns:KøretøjRegistreringStatusÅrsag>
-                              <ns:KøretøjRegistreringGyldigFra>2001-12-17T09:30:47Z</ns:KøretøjRegistreringGyldigFra>
-                           </ns:KøretøjRegistreringPrint>
-                           <ns:LeasingReelOphørDato>1967-08-13</ns:LeasingReelOphørDato>
-                           <ns:KøretøjVærdifastsatAdvisStruktur>
-                              <ns:Modtager>
-                                 <ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                                    <ns:IdentifikatorValg>
-                                       <ns:JuridiskEnhedIdentifikatorStruktur>
-                                          <ns:JuridiskEnhedValg>
-                                             <ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
-                                          </ns:JuridiskEnhedValg>
-                                       </ns:JuridiskEnhedIdentifikatorStruktur>
-                                    </ns:IdentifikatorValg>
-                                 </ns:JuridiskEnhedIdentifikatorPrintStruktur>
-                              </ns:Modtager>
-                              <ns:DMRSagESDHNummer>00-000000</ns:DMRSagESDHNummer>
-                              <ns:AnmeldelseÅrsagNavn/>
-                              <ns:KøretøjOplysningStelNummer/>
-                              <ns:KøretøjMærkeTypeNavn/>
-                              <ns:KøretøjModelTypeNavn/>
-                              <ns:KøretøjVariantTypeNavn/>
-                              <ns:KøretøjArtNavn/>
-                              <ns:KøretøjAnvendelseNavn/>
-                              <ns:KøretøjOplysningFørsteRegistreringDato>1967-08-13</ns:KøretøjOplysningFørsteRegistreringDato>
-                              <ns:DrivkraftTypeNavn/>
-                              <ns:KøretøjMotorKilometerstand>0</ns:KøretøjMotorKilometerstand>
-                              <ns:KøretøjVærditabProcentsats>123456</ns:KøretøjVærditabProcentsats>
-                              <ns:VærdifastsættelseAfgiftspligtigVærdiSomNytBeløb>12345678912.12</ns:VærdifastsættelseAfgiftspligtigVærdiSomNytBeløb>
-                              <ns:UdstyrTypeListe>
-                                 <ns:UdstyrType>
-                                    <ns:KøretøjUdstyrTypeNavn/>
-                                    <ns:KøretøjUdstyrAntal>0</ns:KøretøjUdstyrAntal>
-                                 </ns:UdstyrType>
-                                 <ns:UdstyrType>
-                                    <ns:KøretøjUdstyrTypeNavn/>
-                                    <ns:KøretøjUdstyrAntal>0</ns:KøretøjUdstyrAntal>
-                                 </ns:UdstyrType>
-                              </ns:UdstyrTypeListe>
-                              <ns:KøretøjOplysningNCAPTest>true</ns:KøretøjOplysningNCAPTest>
-                              <ns:KøretøjMotorKmPerLiter>1234.1</ns:KøretøjMotorKmPerLiter>
-                              <ns:KøretøjMotorPlugInHybrid>true</ns:KøretøjMotorPlugInHybrid>
-                              <ns:VærdiFastsættelseAfgiftspligtigVærdi>12345678912.12</ns:VærdiFastsættelseAfgiftspligtigVærdi>
-                              <ns:VærdiFastsættelseRegistreringAfgift>12345678912.12</ns:VærdiFastsættelseRegistreringAfgift>
-                              <ns:VærdiFastsættelseHandelspris>12345678912.12</ns:VærdiFastsættelseHandelspris>
-                              <ns:VærdiFastsættelseNypris>12345678912.12</ns:VærdiFastsættelseNypris>
-                              <ns:VærdiFastsættelseFradragForBoandel>12345678912.12</ns:VærdiFastsættelseFradragForBoandel>
-                              <ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>12345678912.12</ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>
-                              <ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>12345678912.12</ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>
-                              <ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>123.45</ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>
-                              <ns:VærdiFastsættelseHandelsprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseHandelsprisFørOmregistrering>
-                              <ns:VærdiFastsættelseNyprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseNyprisFørOmregistrering>
-                              <ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>
-                              <ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>
-                              <ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>
-                              <ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>
-                              <ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>12345678912.12</ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>
-                              <ns:VærdiFastsættelseFradragUnderLoft>12345678912.12</ns:VærdiFastsættelseFradragUnderLoft>
-                              <ns:VærdiFastsættelseBundfradrag>12345678912.12</ns:VærdiFastsættelseBundfradrag>
-                              <ns:TilBetaling>12345678912.12</ns:TilBetaling>
-                              <ns:Modregning>12345678912.12</ns:Modregning>
-                              <ns:Eksportgodtgørelse>12345678912.12</ns:Eksportgodtgørelse>
-                              <ns:VærdiFastsættelseEksportLoft>12345678912.12</ns:VærdiFastsættelseEksportLoft>
-                              <ns:VærdiFastsættelseToldSynImport>true</ns:VærdiFastsættelseToldSynImport>
-                              <ns:VærdiFastsættelseToldSynEksport>true</ns:VærdiFastsættelseToldSynEksport>
-                              <ns:BeregningReguleringTypeVedrørerVærdi>
-                                 <ns:BeregningRegulering>
-                                    <ns:BeregningReguleringNavn/>
-                                    <ns:BeregningReguleringBeløb>12345678912.12</ns:BeregningReguleringBeløb>
-                                    <ns:BeregningReguleringAntal>123456789123</ns:BeregningReguleringAntal>
-                                 </ns:BeregningRegulering>
-                                 <ns:BeregningRegulering>
-                                    <ns:BeregningReguleringNavn/>
-                                    <ns:BeregningReguleringBeløb>12345678912.12</ns:BeregningReguleringBeløb>
-                                    <ns:BeregningReguleringAntal>123456789123</ns:BeregningReguleringAntal>
-                                 </ns:BeregningRegulering>
-                              </ns:BeregningReguleringTypeVedrørerVærdi>
-                              <ns:BeregningReguleringTypeVedrørerAfgift>
-                                 <ns:BeregningRegulering>
-                                    <ns:BeregningReguleringNavn/>
-                                    <ns:BeregningReguleringBeløb>12345678912.12</ns:BeregningReguleringBeløb>
-                                    <ns:BeregningReguleringAntal>123456789123</ns:BeregningReguleringAntal>
-                                 </ns:BeregningRegulering>
-                                 <ns:BeregningRegulering>
-                                    <ns:BeregningReguleringNavn/>
-                                    <ns:BeregningReguleringBeløb>12345678912.12</ns:BeregningReguleringBeløb>
-                                    <ns:BeregningReguleringAntal>123456789123</ns:BeregningReguleringAntal>
-                                 </ns:BeregningRegulering>
-                              </ns:BeregningReguleringTypeVedrørerAfgift>
-                              <ns:VærdiFastsættelseGrundlagKøretøjFremvist>true</ns:VærdiFastsættelseGrundlagKøretøjFremvist>
-                              <ns:VærdiFastsættelseGrundlagStand>true</ns:VærdiFastsættelseGrundlagStand>
-                              <ns:VærdiFastsættelseGrundlagKørteKm>true</ns:VærdiFastsættelseGrundlagKørteKm>
-                              <ns:VærdiFastsættelseGrundlagEkstraUdstyr>true</ns:VærdiFastsættelseGrundlagEkstraUdstyr>
-                              <ns:VærdiFastsættelseGrundlagSærligAnvendelse>true</ns:VærdiFastsættelseGrundlagSærligAnvendelse>
-                              <ns:VærdiFastsættelseGrundlagNypris>true</ns:VærdiFastsættelseGrundlagNypris>
-                              <ns:VærdiFastsættelseGrundlagNyprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagNyprisBeløb>
-                              <ns:VærdiFastsættelseGrundlagHandelspris>true</ns:VærdiFastsættelseGrundlagHandelspris>
-                              <ns:VærdiFastsættelseGrundlagHandelsprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagHandelsprisBeløb>
-                              <ns:VærdiFastsættelseGrundlagAnnoncePris>true</ns:VærdiFastsættelseGrundlagAnnoncePris>
-                              <ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>
-                              <ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>
-                              <ns:VærdiFastsættelseGrundlagDafKatalog>true</ns:VærdiFastsættelseGrundlagDafKatalog>
-                              <ns:VærdiFastsættelseGrundlagDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagDafKatalogBeløb>
-                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>
-                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>
-                              <ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>
-                              <ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>
-                              <ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>
-                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeDafKatalog>true</ns:VærdiFastsættelseGrundlagForrigeDafKatalog>
-                              <ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>
-                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>true</ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>
-                              <ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>
-                              <ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>
-                              <ns:VærdiFastsættelseGrundlagJournalNummer/>
-                              <ns:VærdiFastsættelseGrundlagNoter>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagNoter>
-                              <ns:VærdiFastsættelseGrundlagBemærkning>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagBemærkning>
-                              <ns:FIK>
-                                 <ns:OCRKortType>00</ns:OCRKortType>
-                                 <ns:OCRNummer>1234567891234567</ns:OCRNummer>
-                                 <ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>
-                              </ns:FIK>
-                           </ns:KøretøjVærdifastsatAdvisStruktur>
-                           <ns:LeasingAfgiftKvittering>
-                              <ns:RegistreringAfgift>234.56</ns:RegistreringAfgift>
-                              <ns:RegistreringAfgiftForudsatVærditab>12345678912.12</ns:RegistreringAfgiftForudsatVærditab>
-                              <ns:RentesatsAfForudsatVærditab>123456</ns:RentesatsAfForudsatVærditab>
-                              <ns:RestafgiftVedUdløb>12345678912.12</ns:RestafgiftVedUdløb>
-                              <ns:RenteAfRestafgift>12345678912.12</ns:RenteAfRestafgift>
-                              <ns:RentesatsAfRestafgift>123456</ns:RentesatsAfRestafgift>
-                              <ns:FpvVærdiForTillægsrentesats>123456</ns:FpvVærdiForTillægsrentesats>
-                              <ns:ForholdsmæssigRegistreringAfgift>12345678912.12</ns:ForholdsmæssigRegistreringAfgift>
-                              <ns:TidligereAfregnetRegistreringAfgift>12345678912.12</ns:TidligereAfregnetRegistreringAfgift>
-                              <ns:LeasingAfgiftRenteRefusion>12345678912.12</ns:LeasingAfgiftRenteRefusion>
-                           </ns:LeasingAfgiftKvittering>
-                        </ns:LeasingOpretKvitteringStruktur>
-                     </ns:KvitteringValg>
-                  </ns:KvitteringIndholdStruktur>
+                 	<ns:KvitteringIndholdStruktur>
+				<ns:KvitteringDato>2016-04-14T07:58:10.514+02:00</ns:KvitteringDato>
+				<ns:KvitteringValg>
+					<ns:LeasingOpretKvitteringStruktur>
+						<ns:KøretøjVisitkortKvitteringStruktur>
+							<ns:KøretøjIdent>9000000001768832</ns:KøretøjIdent>
+							<ns:KøretøjMærkeTypeNavn>BMW</ns:KøretøjMærkeTypeNavn>
+							<ns:KøretøjTypeTypeNavn>3-V</ns:KøretøjTypeTypeNavn>
+							<ns:KøretøjModelTypeNavn>3-Serie</ns:KøretøjModelTypeNavn>
+							<ns:KøretøjVariantTypeNavn>320d Gran Turismo Steptronic</ns:KøretøjVariantTypeNavn>
+							<ns:KøretøjArtNavn>Personbil</ns:KøretøjArtNavn>
+							<ns:KøretøjOplysningModelÅr>2016</ns:KøretøjOplysningModelÅr>
+							<ns:FarveTypeStruktur>
+								<ns:FarveTypeNummer>4</ns:FarveTypeNummer>
+								<ns:FarveTypeNavn>Sort</ns:FarveTypeNavn>
+							</ns:FarveTypeStruktur>
+							<ns:KøretøjAnvendelseNavn>Privat personkørsel</ns:KøretøjAnvendelseNavn>
+							<ns:KøretøjOplysningStelNummer>WBA8Y7104GG398718</ns:KøretøjOplysningStelNummer>
+							<ns:KøretøjOplysningStatus>Oprettet</ns:KøretøjOplysningStatus>
+							<ns:KøretøjOplysningStatusDato>2016-04-21T15:31:56.000+02:00</ns:KøretøjOplysningStatusDato>
+						</ns:KøretøjVisitkortKvitteringStruktur>
+						<ns:LeasingSelskab>
+							<ns:JuridiskEnhedIdentifikatorPrintStruktur>
+								<ns:IdentifikatorValg>
+									<ns:NavnAdresseFirma>
+										<ns:VirksomhedNavnFirmaNavn>BMW FINANCIAL SERVICES DENMARK A/S</ns:VirksomhedNavnFirmaNavn>
+										<ns:AdresseValg>
+											<ns:AdresseStruktur>
+												<ns:Adresse>
+													<ns:AdresseFortløbendeNummer>0</ns:AdresseFortløbendeNummer>
+													<ns:AdresseVejNavn>Borgm Christiansensg</ns:AdresseVejNavn>
+													<ns:AdresseVejKode>728</ns:AdresseVejKode>
+													<ns:AdresseFraHusNummer>50</ns:AdresseFraHusNummer>
+													<ns:AdressePostNummer>2450</ns:AdressePostNummer>
+													<ns:AdressePostDistrikt>København SV</ns:AdressePostDistrikt>
+													<ns:AdresseGyldigFra>2005-02-08</ns:AdresseGyldigFra>
+												</ns:Adresse>
+											</ns:AdresseStruktur>
+										</ns:AdresseValg>
+									</ns:NavnAdresseFirma>
+								</ns:IdentifikatorValg>
+							</ns:JuridiskEnhedIdentifikatorPrintStruktur>
+						</ns:LeasingSelskab>
+						<ns:Kunde>
+							<ns:JuridiskEnhedIdentifikatorPrintStruktur>
+								<ns:IdentifikatorValg>
+									<ns:NavnAdressePerson>
+										<ns:PersonNavnNavn>Rasmus Andreas Dahlin</ns:PersonNavnNavn>
+										<ns:AdresseValg>
+											<ns:AdresseStruktur>
+												<ns:Adresse>
+													<ns:AdresseVejNavn>Ole Rømers Gade</ns:AdresseVejNavn>
+													<ns:AdresseVejKode>6165</ns:AdresseVejKode>
+													<ns:AdresseFraHusNummer>98</ns:AdresseFraHusNummer>
+													<ns:AdresseEtageTekst>st</ns:AdresseEtageTekst>
+													<ns:AdressePostNummer>8000</ns:AdressePostNummer>
+													<ns:AdressePostDistrikt>Aarhus C</ns:AdressePostDistrikt>
+													<ns:AdresseGyldigFra>2015-12-30</ns:AdresseGyldigFra>
+												</ns:Adresse>
+											</ns:AdresseStruktur>
+										</ns:AdresseValg>
+									</ns:NavnAdressePerson>
+								</ns:IdentifikatorValg>
+							</ns:JuridiskEnhedIdentifikatorPrintStruktur>
+						</ns:Kunde>
+						<ns:LeasingGyldigFra>1967-08-13+00:00</ns:LeasingGyldigFra>
+						<ns:LeasingGyldigTil>1967-08-14+01:00</ns:LeasingGyldigTil>
+						<ns:LeasingMåneder>25</ns:LeasingMåneder>
+						<ns:LeasingNummer>491417273080140834</ns:LeasingNummer>
+						<ns:LeasingKode>1007</ns:LeasingKode>
+						<ns:LeasingBemærkning>StatustTypeNummer=3</ns:LeasingBemærkning>
+						<ns:LeasingVærditabStatusTypeNummer>3</ns:LeasingVærditabStatusTypeNummer>
+						<ns:LeasingAfgiftValgStruktur>
+							<ns:LeasingAfgiftValg>
+								<ns:LeasingAfgift>
+									<ns:KøretøjRegistreringGrundlagIdent>0</ns:KøretøjRegistreringGrundlagIdent>
+									<ns:LeasingAfgiftGrundStruktur>
+										<ns:OpgjortAfgiftFordringId/>
+										<ns:OpgjortAfgiftDatoTid>2001-12-17T09:30:47Z</ns:OpgjortAfgiftDatoTid>
+										<ns:OpgjortAfgiftBeløb>12345678912.12</ns:OpgjortAfgiftBeløb>
+										<ns:OpgjortAfgiftStatus>FejlRettet</ns:OpgjortAfgiftStatus>
+										<ns:VærdiFastsættelseIdent>0</ns:VærdiFastsættelseIdent>
+										<ns:LeasingAfgiftDækkerFraDato>1967-08-13</ns:LeasingAfgiftDækkerFraDato>
+										<ns:LeasingAfgiftDækkerTilDato>1967-08-13</ns:LeasingAfgiftDækkerTilDato>
+										<ns:OpgjortAfgiftSidsteBetalingDato>1967-08-13</ns:OpgjortAfgiftSidsteBetalingDato>
+										<ns:RegistreringNummerNummer>0*</ns:RegistreringNummerNummer>
+										<ns:RegistreringNummerIdent>0</ns:RegistreringNummerIdent>
+										<ns:KøretøjRegistreringNummer>0</ns:KøretøjRegistreringNummer>
+										<ns:JuridiskEnhedIdentifikatorStruktur>
+											<ns:JuridiskEnhedValg>
+												<ns:PersonCPRNummer>0101000000</ns:PersonCPRNummer>
+											</ns:JuridiskEnhedValg>
+										</ns:JuridiskEnhedIdentifikatorStruktur>
+										<ns:MånedAngivelseIdent>0</ns:MånedAngivelseIdent>
+										<ns:LeasingNummer>0</ns:LeasingNummer>
+										<ns:LeasingAfgiftOpkrævListe>
+											<ns:LeasingAfgiftOpkræv>
+												<ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>
+												<ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>
+												<ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>
+											</ns:LeasingAfgiftOpkræv>
+											<ns:LeasingAfgiftOpkræv>
+												<ns:LeasingAfgiftOpkrævBeløb>12345678912.12</ns:LeasingAfgiftOpkrævBeløb>
+												<ns:LeasingAfgiftProcentSats>3.14159E0</ns:LeasingAfgiftProcentSats>
+												<ns:LeasingAfgiftOpkrævGruppeNummer>0</ns:LeasingAfgiftOpkrævGruppeNummer>
+											</ns:LeasingAfgiftOpkræv>
+										</ns:LeasingAfgiftOpkrævListe>
+									</ns:LeasingAfgiftGrundStruktur>
+								</ns:LeasingAfgift>
+							</ns:LeasingAfgiftValg>
+						</ns:LeasingAfgiftValgStruktur>
+						<ns:KøretøjMotorCO2UdslipBeregnet>17.123456</ns:KøretøjMotorCO2UdslipBeregnet>
+						<ns:KøretøjMotorBatterikapacitet>77.123456</ns:KøretøjMotorBatterikapacitet>
+						<ns:MedKlageVejledning>true</ns:MedKlageVejledning>
+						<ns:FIK>
+							<ns:OCRKortType>07</ns:OCRKortType>
+							<ns:OCRNummer>1234567890123456</ns:OCRNummer>
+							<ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>
+						</ns:FIK>
+						<ns:KøretøjRegistreringPrint>
+							<ns:KøretøjRegistreringStatus>Registreret</ns:KøretøjRegistreringStatus>
+							<ns:KøretøjRegistreringStatusDato>2001-12-17T09:30:47Z</ns:KøretøjRegistreringStatusDato>
+							<ns:KøretøjRegistreringStatusÅrsag>AfmeldtAlmindeligt</ns:KøretøjRegistreringStatusÅrsag>
+							<ns:KøretøjRegistreringGyldigFra>2001-12-17T09:30:47Z</ns:KøretøjRegistreringGyldigFra>
+						</ns:KøretøjRegistreringPrint>
+						<ns:LeasingReelOphørDato>1967-08-13</ns:LeasingReelOphørDato>
+						<ns:KøretøjVærdifastsatAdvisStruktur>
+							<ns:Modtager>
+								<ns:JuridiskEnhedIdentifikatorPrintStruktur>
+									<ns:IdentifikatorValg>
+										<ns:NavnAdresseFirma>
+											<ns:VirksomhedNavnFirmaNavn>BMW FINANCIAL SERVICES DENMARK A/S</ns:VirksomhedNavnFirmaNavn>
+											<ns:AdresseValg>
+												<ns:AdresseStruktur>
+													<ns:Adresse>
+														<ns:AdresseFortløbendeNummer>0</ns:AdresseFortløbendeNummer>
+														<ns:AdresseVejNavn>Borgm Christiansensg</ns:AdresseVejNavn>
+														<ns:AdresseVejKode>728</ns:AdresseVejKode>
+														<ns:AdresseFraHusNummer>50</ns:AdresseFraHusNummer>
+														<ns:AdressePostNummer>2450</ns:AdressePostNummer>
+														<ns:AdressePostDistrikt>København SV</ns:AdressePostDistrikt>
+														<ns:AdresseGyldigFra>2005-02-08</ns:AdresseGyldigFra>
+													</ns:Adresse>
+												</ns:AdresseStruktur>
+											</ns:AdresseValg>
+										</ns:NavnAdresseFirma>
+									</ns:IdentifikatorValg>
+								</ns:JuridiskEnhedIdentifikatorPrintStruktur>
+							</ns:Modtager>
+							<ns:DMRSagESDHNummer>00-000000</ns:DMRSagESDHNummer>
+							<ns:AnmeldelseÅrsagNavn>Andet</ns:AnmeldelseÅrsagNavn>
+							<ns:KøretøjOplysningStelNummer>WBA8Y7104GG398718</ns:KøretøjOplysningStelNummer>
+							<ns:KøretøjMærkeTypeNavn>BMW</ns:KøretøjMærkeTypeNavn>
+							<ns:KøretøjModelTypeNavn>3-Serie</ns:KøretøjModelTypeNavn>
+							<ns:KøretøjVariantTypeNavn>320d Gran Turismo Steptronic</ns:KøretøjVariantTypeNavn>
+							<ns:KøretøjArtNavn>Personbil</ns:KøretøjArtNavn>
+							<ns:KøretøjAnvendelseNavn>Privat personkørsel</ns:KøretøjAnvendelseNavn>
+							<ns:DrivkraftTypeNavn>Diesel</ns:DrivkraftTypeNavn>
+							<ns:KøretøjMotorKilometerstand>0</ns:KøretøjMotorKilometerstand>
+							<ns:UdstyrTypeListe>
+								<ns:UdstyrType>
+									<ns:KøretøjUdstyrTypeNavn>ABS bremser</ns:KøretøjUdstyrTypeNavn>
+									<ns:KøretøjUdstyrAntal>1</ns:KøretøjUdstyrAntal>
+								</ns:UdstyrType>
+								<ns:UdstyrType>
+									<ns:KøretøjUdstyrTypeNavn>selealarm</ns:KøretøjUdstyrTypeNavn>
+									<ns:KøretøjUdstyrAntal>3</ns:KøretøjUdstyrAntal>
+								</ns:UdstyrType>
+								<ns:UdstyrType>
+									<ns:KøretøjUdstyrTypeNavn>Airbags</ns:KøretøjUdstyrTypeNavn>
+									<ns:KøretøjUdstyrAntal>6</ns:KøretøjUdstyrAntal>
+								</ns:UdstyrType>
+								<ns:UdstyrType>
+									<ns:KøretøjUdstyrTypeNavn>ESP (Elektronisk Stabiliserings Program)</ns:KøretøjUdstyrTypeNavn>
+									<ns:KøretøjUdstyrAntal>1</ns:KøretøjUdstyrAntal>
+								</ns:UdstyrType>
+								<ns:UdstyrType>
+									<ns:KøretøjUdstyrTypeNavn>integreret barnesæde</ns:KøretøjUdstyrTypeNavn>
+									<ns:KøretøjUdstyrAntal>0</ns:KøretøjUdstyrAntal>
+								</ns:UdstyrType>
+							</ns:UdstyrTypeListe>
+							<ns:KøretøjOplysningNCAPTest>true</ns:KøretøjOplysningNCAPTest>
+							<ns:KøretøjMotorKmPerLiter>23.3</ns:KøretøjMotorKmPerLiter>
+							<ns:KøretøjMotorPlugInHybrid>true</ns:KøretøjMotorPlugInHybrid>
+							<ns:VærdiFastsættelseAfgiftspligtigVærdi>182028</ns:VærdiFastsættelseAfgiftspligtigVærdi>
+							<ns:VærdiFastsættelseAfgiftspligtigVærdiFørNedsættelse>12345678912.12</ns:VærdiFastsættelseAfgiftspligtigVærdiFørNedsættelse>
+							<ns:VærdiFastsættelseRegistreringAfgift>213982</ns:VærdiFastsættelseRegistreringAfgift>
+							<ns:VærdiFastsættelseHandelspris>278395</ns:VærdiFastsættelseHandelspris>
+							<ns:VærdiFastsættelseNypris>278395</ns:VærdiFastsættelseNypris>
+							<ns:VærdiFastsættelseFradragForBoandel>12345678912.12</ns:VærdiFastsættelseFradragForBoandel>
+							<ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>141620</ns:VærdiFastsættelseBruttoAfgiftspligtigVærdi>
+							<ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>12345678912.12</ns:VærdiFastsaettelseRegistreringAfgiftFørOmregistrering>
+							<ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>12345678912.12</ns:VærdiFastsættelseRegistreringAfgiftFørOmregistreringBetaltAfgift>
+							<ns:VærdiFastsættelseHandelsprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseHandelsprisFørOmregistrering>
+							<ns:VærdiFastsættelseNyprisFørOmregistrering>12345678912.12</ns:VærdiFastsættelseNyprisFørOmregistrering>
+							<ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetFør2016>
+							<ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftFør2016>
+							<ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>12345678912.12</ns:VærdiFastsættelseNedslagForEnergieffektivitetEfter2016>
+							<ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>12345678912.12</ns:VærdiFastsættelseSamletRegistreringsafgiftEfter2016>
+							<ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>12345678912.12</ns:VærdiFastsættelseMerafgiftVedFuldIndfasning>
+							<ns:VærdiFastsættelseFradragUnderLoft>12345678912.12</ns:VærdiFastsættelseFradragUnderLoft>
+							<ns:VærdiFastsættelseBundfradrag>12345678912.12</ns:VærdiFastsættelseBundfradrag>
+							<ns:TilBetaling>12345678912.12</ns:TilBetaling>
+							<ns:Modregning>12345678912.12</ns:Modregning>
+							<ns:Eksportgodtgørelse>12345678912.12</ns:Eksportgodtgørelse>
+							<ns:VærdiFastsættelseEksportLoft>12345678912.12</ns:VærdiFastsættelseEksportLoft>
+							<ns:VærdiFastsættelseToldSynImport>true</ns:VærdiFastsættelseToldSynImport>
+							<ns:VærdiFastsættelseToldSynEksport>true</ns:VærdiFastsættelseToldSynEksport>
+							<ns:BeregningReguleringTypeVedrørerVærdi>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>Radio fradrag værdi (2016)</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>400</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>AbsBremser fradrag værdi</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>3750</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>Airbags fradrag værdi</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>5120</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>4</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>ESP fradrag værdi</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>2500</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+							</ns:BeregningReguleringTypeVedrørerVærdi>
+							<ns:BeregningReguleringTypeVedrørerAfgift>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>Brændstof fradrag afgift øvrige person 2015</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>21200</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>1</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+								<ns:BeregningRegulering>
+									<ns:BeregningReguleringNavn>Selealarm fradrag afgift</ns:BeregningReguleringNavn>
+									<ns:BeregningReguleringBeløb>600</ns:BeregningReguleringBeløb>
+									<ns:BeregningReguleringAntal>3</ns:BeregningReguleringAntal>
+								</ns:BeregningRegulering>
+							</ns:BeregningReguleringTypeVedrørerAfgift>
+							<ns:VærdiFastsættelseGrundlagKøretøjFremvist>true</ns:VærdiFastsættelseGrundlagKøretøjFremvist>
+							<ns:VærdiFastsættelseGrundlagStand>false</ns:VærdiFastsættelseGrundlagStand>
+							<ns:VærdiFastsættelseGrundlagKørteKm>false</ns:VærdiFastsættelseGrundlagKørteKm>
+							<ns:VærdiFastsættelseGrundlagEkstraUdstyr>false</ns:VærdiFastsættelseGrundlagEkstraUdstyr>
+							<ns:VærdiFastsættelseGrundlagSærligAnvendelse>false</ns:VærdiFastsættelseGrundlagSærligAnvendelse>
+							<ns:VærdiFastsættelseGrundlagNypris>false</ns:VærdiFastsættelseGrundlagNypris>
+							<ns:VærdiFastsættelseGrundlagNyprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagNyprisBeløb>
+							<ns:VærdiFastsættelseGrundlagHandelspris>true</ns:VærdiFastsættelseGrundlagHandelspris>
+							<ns:VærdiFastsættelseGrundlagHandelsprisBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagHandelsprisBeløb>
+							<ns:VærdiFastsættelseGrundlagAnnoncePris>false</ns:VærdiFastsættelseGrundlagAnnoncePris>
+							<ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>1587455</ns:VærdiFastsættelseGrundlagAnnoncePrisNedreBeløb>
+							<ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>2458795</ns:VærdiFastsættelseGrundlagAnnoncePrisØvreBeløb>
+							<ns:VærdiFastsættelseGrundlagDafKatalog>false</ns:VærdiFastsættelseGrundlagDafKatalog>
+							<ns:VærdiFastsættelseGrundlagDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagDafKatalogBeløb>
+							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>false</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedier>
+							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierNedreBeløb>
+							<ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagSalgsprisAndreMedierØvreBeløb>
+							<ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>false</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarende>
+							<ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagTidligereVurderingTilsvarendeBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>true</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedier>
+							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisØvreBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierNedreBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeDafKatalog>true</ns:VærdiFastsættelseGrundlagForrigeDafKatalog>
+							<ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>true</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarende>
+							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>true</ns:VærdiFastsættelseGrundlagForrigeAnnoncePris>
+							<ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeDafKatalogBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeTidligereVurderingTilsvarendeBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeAnnoncePrisNedreBeløb>
+							<ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>12345678912.12</ns:VærdiFastsættelseGrundlagForrigeSalgsprisAndreMedierØvreBeløb>
+							<ns:VærdiFastsættelseGrundlagJournalNummer/>
+							<ns:VærdiFastsættelseGrundlagNoter>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagNoter>
+							<ns:VærdiFastsættelseGrundlagBemærkning>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ns:VærdiFastsættelseGrundlagBemærkning>
+							<ns:FIK>
+								<ns:OCRKortType>00</ns:OCRKortType>
+								<ns:OCRNummer>1234567891234567</ns:OCRNummer>
+								<ns:OCRKontoNummer>1234567891234567</ns:OCRKontoNummer>
+							</ns:FIK>
+						</ns:KøretøjVærdifastsatAdvisStruktur>
+						<ns:LeasingAfgiftKvittering>
+							<ns:RegistreringAfgift>213982</ns:RegistreringAfgift>
+							<ns:RegistreringAfgiftForudsatVærditab>59915</ns:RegistreringAfgiftForudsatVærditab>
+							<ns:RentesatsAfForudsatVærditab>28</ns:RentesatsAfForudsatVærditab>
+							<ns:RestafgiftVedUdløb>154067</ns:RestafgiftVedUdløb>
+							<ns:RenteAfRestafgift>9629</ns:RenteAfRestafgift>
+							<ns:RentesatsAfRestafgift>6.2</ns:RentesatsAfRestafgift>
+							<ns:FpvVærdiForTillægsrentesats>3.00</ns:FpvVærdiForTillægsrentesats>
+							<ns:ForholdsmæssigRegistreringAfgift>69544</ns:ForholdsmæssigRegistreringAfgift>
+						</ns:LeasingAfgiftKvittering>
+					</ns:LeasingOpretKvitteringStruktur>
+				</ns:KvitteringValg>
+			</ns:KvitteringIndholdStruktur>
                </ns:MeddelelseIndhold>
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w19319</ns:MeddelelseOprettetAfMedarbejder>
+               <ns:MeddelelseOprettetAfMedarbejder>w35445</ns:MeddelelseOprettetAfMedarbejder>
                <!--<ns:KanalTypeNummer>3</ns:KanalTypeNummer>-->
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
                <ns:Filer/>
@@ -20310,7 +20442,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w95641</ns:MeddelelseOprettetAfMedarbejder>
+               <ns:MeddelelseOprettetAfMedarbejder>w35445</ns:MeddelelseOprettetAfMedarbejder>
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
                <ns:Filer/>
             </ns:Meddelelse>
@@ -25101,7 +25233,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w95641</ns:MeddelelseOprettetAfMedarbejder>
+               <ns:MeddelelseOprettetAfMedarbejder>w35445</ns:MeddelelseOprettetAfMedarbejder>
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
                <ns:Filer/>
             </ns:Meddelelse>
@@ -25377,7 +25509,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
                <ns:MeddelelseTypeNummer>${MeddelelseTypeNummer}</ns:MeddelelseTypeNummer>
                <ns:MeddelelseAfsenderReference>99</ns:MeddelelseAfsenderReference>
                <ns:KundeNummer>${KundeNummer}</ns:KundeNummer>
-               <ns:MeddelelseOprettetAfMedarbejder>w95641</ns:MeddelelseOprettetAfMedarbejder>
+               <ns:MeddelelseOprettetAfMedarbejder>w35445</ns:MeddelelseOprettetAfMedarbejder>
                <ns:MeddelelseTypeSkalIKommunikationMappe>true</ns:MeddelelseTypeSkalIKommunikationMappe>
                <ns:Filer/>
             </ns:Meddelelse>
@@ -30737,6 +30869,7 @@ context.MeddelelseBatchId = String.valueOf((System.currentTimeMillis()/1000).toI
             <ns:Meddelelse>\r
                <ns:MeddelelseIndhold>\r
                   <ns:AdvisIndholdStruktur>\r
+                     <ns:UdskriftDato>1967-08-14</ns:UdskriftDato>\r
                      <ns:AdvisValg>\r
                         <ns:ReturpladerTilAfhentningStruktur>\r
                            <ns:RegistreringNummerNummer>ABC1234567</ns:RegistreringNummerNummer>\r
